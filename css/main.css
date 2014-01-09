@@ -3,11 +3,94 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+@font-face
+{
+font-family: 'infinityFont';
+src: url(../fonts/MalleableGrotesque.otf);
+}
+   
+ .whitefont {
+    color:#ffffff;
+ }
+ .yellowfont {
+    color: #cc9035;
+ }
+.greyfont {
+    font-family:'infinityFont';
+    font-size: 140%;
+    color: #9b8579;
+}
+.greyfont h2{
+    font-family:'infinityFont';
+    font-size: 200%;
+    color: #9b8579;
+}
+
+.jumbotron {
+    padding-top: 0px;
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(50, 50, 50, 0.64);
+    -moz-box-shadow:    5px 5px 10px 0px rgba(50, 50, 50, 0.64);
+    box-shadow:         5px 5px 10px 0px rgba(50, 50, 50, 0.64);
+}
+
+ .jumbotron.infinitybluebgn {
+    background-color: #303c56;
+    height: 300px;
+ }
+ 
+.jumbotron .bannertext {
+    margin-left: 70px;
+    padding-top: 60px;
+    float: left;
+}
+
+.jumbotron .bannertext .title {
+    color: #ffffff;
+    font-family:'infinityFont';
+    font-size: 96px;
+}
+
+.jumbotron .bannertext .subtext {
+    color: #9b8579;
+    font-family: arial;
+    font-size: 20px;
+}
+
+.jumbotron img.bannerimg {
+    float: right;
+    margin-right: 150px;
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(50, 50, 50, 0.64);
+    -moz-box-shadow:    5px 5px 10px 0px rgba(50, 50, 50, 0.64);
+    box-shadow:         5px 5px 10px 0px rgba(50, 50, 50, 0.64);
+}
 
 
+.spacer {
+    margin-top: 80px; /* define margin as you see fit */
+}
 
+ul,li { 
+    list-style-type: none;
+    list-style-position:inside;
+    margin:0;
+    padding:0; 
+}
 
+@media (max-width: 1200px) {
+    .jumbotron img.bannerimg {
+        display: none;
+    }
+    
+    .spacer {
+        margin-top: 0; /* define margin as you see fit */
+    }
+}
 
+@media (max-width: 680px) {
+    .jumbotron h1.bannertext {
+        font-size: 80px;
+    }
+}
 
 
 
