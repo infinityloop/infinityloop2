@@ -33,7 +33,7 @@ src: url(../fonts/MalleableGrotesque.otf);
     box-shadow:         5px 5px 10px 0px rgba(50, 50, 50, 0.64);
 }
 
- .jumbotron.infinitybluebgn {
+.infinitybluebgn {
     background-color: #303c56;
     height: 300px;
  }
@@ -64,6 +64,16 @@ src: url(../fonts/MalleableGrotesque.otf);
     box-shadow:         5px 5px 10px 0px rgba(50, 50, 50, 0.64);
 }
 
+.footerbar {
+    width: 100%;
+    background-color: #303c56;
+    height: 100px;
+}
+
+.copyright {
+    position: relative;
+    float: right;
+}
 
 .spacer {
     margin-top: 80px; /* define margin as you see fit */
@@ -73,22 +83,54 @@ ul,li {
     list-style-type: none;
     list-style-position:inside;
     margin:0;
-    padding:0; 
+    padding: 0;
+    padding-bottom:10px; 
 }
 
+/**
+** Social Media Icons
+**/
+.icons {
+    text-align: center;
+}
+
+.icons a {
+    display: inline-block;
+    height: 64px;
+    width: 64px;
+    background-size: 64px 64px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 15px;
+    text-indent: -9999em;
+    background-color: #1c2638;
+}
+
+/**
+** Responsive Classes
+**/
 @media (max-width: 1200px) {
     .jumbotron img.bannerimg {
         display: none;
     }
     
+    .jumbotron .bannertext h1.title {
+        font-size: 80px;
+    }
     .spacer {
         margin-top: 0; /* define margin as you see fit */
     }
 }
 
-@media (max-width: 680px) {
-    .jumbotron h1.bannertext {
-        font-size: 80px;
+@media (max-width: 620px) {
+    .jumbotron .bannertext h1.title {
+        font-size: 60px;
+    }
+    .icons a {
+        height: 48px;
+        width: 48px;
+        background-size: 48px 48px;
+        margin: 10px;
     }
 }
 
