@@ -26,6 +26,11 @@ src: url(../fonts/MalleableGrotesque.otf);
     color: #9b8579;
 }
 
+.bluefont {
+    font-family:'Lucida Sans Unicode';
+    color: #303c56;
+}
+
 .jumbotron {
     padding-top: 0px;
     -webkit-box-shadow: 5px 5px 10px 0px rgba(50, 50, 50, 0.64);
@@ -51,9 +56,9 @@ src: url(../fonts/MalleableGrotesque.otf);
 }
 
 .jumbotron .bannertext .subtext {
-    color: #9b8579;
-    font-family: arial;
-    font-size: 20px;
+    color: #cc9035;
+    font-family: Lucida Sans Unicode;
+    font-size: 100%;
 }
 
 .jumbotron img.bannerimg {
@@ -80,11 +85,14 @@ src: url(../fonts/MalleableGrotesque.otf);
 }
 
 ul,li { 
+    color: #303c56;
     list-style-type: none;
     list-style-position:inside;
     margin:0;
     padding: 0;
     padding-bottom:10px; 
+    font-family: Lucida Sans Unicode;
+    font-size: 90%;
 }
 
 /**
@@ -104,15 +112,15 @@ ul,li {
     margin: 15px;
     text-indent: -9999em;
     background-color: #1c2638;
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(50, 50, 50, 0.64);
+    -moz-box-shadow:    5px 5px 10px 0px rgba(50, 50, 50, 0.64);
+    box-shadow:         5px 5px 10px 0px rgba(50, 50, 50, 0.64);
 }
 
 /**
 ** Responsive Classes
 **/
 @media (max-width: 1200px) {
-    .jumbotron img.bannerimg {
-        display: none;
-    }
     
     .jumbotron .bannertext h1.title {
         font-size: 80px;
@@ -120,6 +128,10 @@ ul,li {
     .spacer {
         margin-top: 0; /* define margin as you see fit */
     }
+    
+    .visible-desktop {
+        display: none;
+     }
 }
 
 @media (max-width: 620px) {
@@ -131,6 +143,12 @@ ul,li {
         width: 48px;
         background-size: 48px 48px;
         margin: 10px;
+    }
+    
+    .jumbotron .bannertext .subtext {
+        color: #cc9035;
+        font-family: Lucida Sans Unicode;
+        font-size: 80%;
     }
 }
 
