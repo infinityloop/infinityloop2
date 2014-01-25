@@ -82,7 +82,7 @@ src: url(../fonts/MalleableGrotesque.otf);
     font-family:'Lucida Sans Unicode';
     font-style: italic;
     text-align: center;
-    font-size: 70%;
+    font-size: 30%;
     color:  #ffffff;
     display: none;
 }
@@ -109,6 +109,13 @@ src: url(../fonts/MalleableGrotesque.otf);
 
 .sectionheader {
     margin-top: 0;
+}
+
+.projectsquare {
+    background-size: cover;
+    height: 350px;
+    width: 350px;
+    margin: 10px;
 }
 
 .footerbar {
