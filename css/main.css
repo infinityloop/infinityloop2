@@ -31,6 +31,11 @@ src: url(../fonts/MalleableGrotesque.otf);
     color: #303c56;
 }
 
+.justified {
+    text-align: justify;
+    padding-bottom: 10px;
+}
+
 .jumbotron {
     padding-top: 0px;
     -webkit-box-shadow: 5px 5px 10px 0px rgba(50, 50, 50, 0.64);
@@ -38,15 +43,48 @@ src: url(../fonts/MalleableGrotesque.otf);
     box-shadow:         5px 5px 10px 0px rgba(50, 50, 50, 0.64);
 }
 
-.infinitybluebgn {
+.bluebgn {
     background-color: #303c56;
-    height: 300px;
+ }
+ 
+ .greybgn {
+    background-color: #c4c4c3;
  }
  
 .jumbotron .bannertext {
     margin-left: 70px;
     padding-top: 60px;
     float: left;
+}
+
+.quotebgn {
+    height: 350px;
+    background-size: cover;
+}
+
+.jumbotron .quotetext { 
+    margin-top: 75px;
+    font-family:'Lucida Sans Unicode';
+    text-align: center;
+    display: none;
+    z-index:1;
+}
+
+.jumbotron .quotetext  p {
+
+    color: #ffffff;
+    margin: auto;
+    vertical-align: middle;
+    font-size: 200%;
+}
+
+.jumbotron .quoteauthor {
+    font-family:'Lucida Sans Unicode';
+    font-style: italic;
+    text-align: center;
+    font-size: 70%;
+    color:  #ffffff;
+    display: none;
 }
 
 .jumbotron .bannertext .title {
@@ -67,6 +105,10 @@ src: url(../fonts/MalleableGrotesque.otf);
     -webkit-box-shadow: 5px 5px 10px 0px rgba(50, 50, 50, 0.64);
     -moz-box-shadow:    5px 5px 10px 0px rgba(50, 50, 50, 0.64);
     box-shadow:         5px 5px 10px 0px rgba(50, 50, 50, 0.64);
+}
+
+.sectionheader {
+    margin-top: 0;
 }
 
 .footerbar {
@@ -136,7 +178,7 @@ ul,li {
 
 @media (max-width: 620px) {
     .jumbotron .bannertext h1.title {
-        font-size: 60px;
+        font-size: 50px;
     }
     .icons a {
         height: 48px;
