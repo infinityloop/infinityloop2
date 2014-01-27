@@ -59,7 +59,11 @@ src: url(../fonts/MalleableGrotesque.otf);
 
 .quotebgn {
     height: 350px;
-    background-size: cover;
+    background-color: black;
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    background-size: contain;
+    background-position:center; 
 }
 
 .jumbotron .quotetext { 
@@ -67,11 +71,9 @@ src: url(../fonts/MalleableGrotesque.otf);
     font-family:'Lucida Sans Unicode';
     text-align: center;
     display: none;
-    z-index:1;
 }
 
-.jumbotron .quotetext  p {
-
+.jumbotron .quotetext p {
     color: #ffffff;
     margin: auto;
     vertical-align: middle;
@@ -111,11 +113,14 @@ src: url(../fonts/MalleableGrotesque.otf);
     margin-top: 0;
 }
 
+#projectcontainer {
+    display: none;
+}
+
 .projectsquare {
     background-size: cover;
-    height: 350px;
-    width: 350px;
-    margin: 10px;
+    margin-top: 10px;
+    margin-right: 5px;
 }
 
 .footerbar {
@@ -181,6 +186,15 @@ ul,li {
     .visible-desktop {
         display: none;
      }
+     
+    .quotebgn {
+        background-size: cover;
+    }
+    
+    .jumbotron .quotetext p {
+        font-size: 120%;
+    }
+
 }
 
 @media (max-width: 620px) {
@@ -198,6 +212,10 @@ ul,li {
         color: #cc9035;
         font-family: Lucida Sans Unicode;
         font-size: 80%;
+    }
+    
+    .quotebgn {
+        display: none;
     }
 }
 
