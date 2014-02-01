@@ -202,8 +202,8 @@ ul,li {
         font-size: 50px;
     }
     .icons a {
-        height: 48px;
-        width: 48px;
+        height: 40px;
+        width: 40px;
         background-size: 48px 48px;
         margin: 10px;
     }
@@ -216,6 +216,10 @@ ul,li {
     
     .quotebgn {
         display: none;
+    }
+    
+    .abouttext {
+        font-size: 80%;
     }
 }
 

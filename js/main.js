@@ -21,7 +21,7 @@ $(window).scroll(function() {
     
     if(($('#projects').position().top - scrollBottom) <= 0 && showProjects == true) {
 
-        $('#projectcontainer').fadeIn(2500);
+        $('#projectcontainer').fadeIn(2000);
         $('#projectcontainer').isotope({
             itemSelector: '.projectsquare',
             masonry: {
