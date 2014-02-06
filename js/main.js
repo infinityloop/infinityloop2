@@ -24,6 +24,7 @@ $(window).scroll(function() {
         $('#projectcontainer').fadeIn(2000);
         $('#projectcontainer').isotope({
             itemSelector: '.projectsquare',
+            sortBy: 'random',
             masonry: {
                 columnWidth: 10
              }
