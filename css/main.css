@@ -114,7 +114,7 @@ src: url(../fonts/MalleableGrotesque.otf);
 }
 
 #projectcontainer {
-    display: none;
+    display: block;
 }
 
 .projectsquare {
@@ -141,7 +141,7 @@ src: url(../fonts/MalleableGrotesque.otf);
         text-align: center;
         font-family: 'Lucida Sans Unicode';
         padding-top: 20px;
-        font-size: 400%;
+        font-size: 350%;
         color: #cc9035;
 }
 
