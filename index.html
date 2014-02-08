@@ -110,8 +110,7 @@
                 <a href="https://github.com/infinityloop/"class="img-rounded" target="_blank" title="GitHub" style="background-image: url('img/icons/github.png');"></a>
                 <a href="http://ca.linkedin.com/in/laukelvin"class="img-rounded" target="_blank" title="LinkedIn" style="background-image: url('img/icons/linkedin.png');"></a>
                 <a href="mailto:Kelvin@infinityloop.ca"class="img-rounded" title="Email" style="background-image: url('img/icons/email.png');"
-                    onclick="window.open('https://mail.google.com/mail/u/0/?view=cm&amp;fs=1&amp;tf=1&amp;to=Kelvin@infinityloop.ca',
-                    'Compose new message','width=640,height=480');return false" rel="noreferrer",></a>
+                    onclick="sendGmail();" rel="noreferrer"></a>
             </div>
         </div>
     </div>
@@ -151,13 +150,12 @@
         </div>
         <div class="row">
             <div id="projectcontainer" class="container">
-                    <div id="projectsquares0" class="projectsquare" style="background-image: url('img/projects/tedx.png'); height: 400px; width: 859px;"></div>
-                    <div id="projectsquares1" class="projectsquare" style="background-image: url('img/projects/spiced.png'); height: 400px; width: 400px;"></div>
+                    <div id="projectsquares0" class="projectsquare" style="background-image: url('img/projects/tedx.png'); height: 300px; width: 644px;"></div>
+                    <div id="projectsquares1" class="projectsquare" style="background-image: url('img/projects/spiced.png'); height: 300px; width: 300px;"></div>
                     <div id="projectsquares2" class="projectsquare" style="background-image: url('img/projects/anan.jpg'); height: 250px; width: 250px;"></div>
                     <div id="projectsquares3" class="projectsquare" style="background-image: url('img/projects/metavera.png'); height: 113px; width: 337px;"></div>
                     <div id="projectsquares4" class="projectsquare" style="background-image: url('img/projects/dealerflow.png'); height: 110px; width: 424px;"></div>
-                    <div id="projectsquares5" class="projectsquare" style="background-image: url('img/projects/nextbus.png'); height: 400px; width: 270px;"></div>
-                    <div id="projectsquares6" class="projectsquare" style="background-image: url('img/projects/yourproject.png'); height: 267px; width: 400px;"></div>
+                    <div id="projectsquares5" class="projectsquare" style="background-image: url('img/projects/yourproject.png'); height: 267px; width: 400px;"></div>
                 </div>
              </div>
         </div>
@@ -166,7 +164,9 @@
      <!-- END -->
       <hr>
 
-      <footer>
+      <footer class="footerbar visible-desktop spacer" style="background: url('img/banner.png'); ">
+        <p class="footertext"> Thanks for dropping by! Questions?</p>
+        <a href="mailto:Kelvin@infinityloop.ca" class="footeremail" onClick="sendGmail();" rel="noreferrer"><p>kelvin@infinityloop.ca</p></a>
         <p class="copyright">&copy; InfinityLoop 2014</p>
       </footer>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>

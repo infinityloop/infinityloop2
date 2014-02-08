@@ -126,12 +126,37 @@ src: url(../fonts/MalleableGrotesque.otf);
 .footerbar {
     width: 100%;
     background-color: #303c56;
-    height: 100px;
+    height: 400px;
+}
+
+.footertext {
+    text-align: center;
+    font-family: 'infinityFont';
+    font-size: 400%;
+    color: #ffffff;
+    padding-top: 120px;
+}
+
+.footeremail {
+        text-align: center;
+        font-family: 'Lucida Sans Unicode';
+        padding-top: 20px;
+        font-size: 400%;
+        color: #cc9035;
+}
+
+a:hover { 
+    color: #c4c4c3;
+    text-decoration: none;
 }
 
 .copyright {
     position: relative;
     float: right;
+    bottom: 0;
+    color: #c4c4c3;
+    padding-top: 50px;
+    padding-right: 20px;
 }
 
 .spacer {

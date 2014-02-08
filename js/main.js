@@ -9,7 +9,7 @@ $(document).ready(function() {
 $(window).scroll(function() {
     var offset = $(window).height()/ 2.5;
     var scrollBottom = $(window).scrollTop() + $(window).height();
-    
+        
     if(($('#quote1').position().top - ($(document).scrollTop() + offset)) <= 0 ) {
         $('#quote1text').fadeIn();
         $('#quote1author').fadeIn();
@@ -21,14 +21,16 @@ $(window).scroll(function() {
     
     if(($('#projects').position().top - scrollBottom) <= 0 && showProjects == true) {
 
-        $('#projectcontainer').fadeIn(2000);
-        $('#projectcontainer').isotope({
+        var $container = $('#projectcontainer');
+        $container.fadeIn(2000);
+        $container.isotope({
             itemSelector: '.projectsquare',
             sortBy: 'random',
             masonry: {
                 columnWidth: 10
              }
         });
+                               
         showProjects = false;
     }
     //console.log($('#quote1').innerHeight());
@@ -39,3 +41,11 @@ $(window).scroll(function() {
     var scrollBottom = $(window).scrollTop() + $(window).height();
     console.log($('#projects').position().top - scrollBottom);
 });
+
+
+function sendGmail() {
+    window.open('https://mail.google.com/mail/u/0/?view=cm&amp;fs=1&amp;tf=1&amp;to=Kelvin@infinityloop.ca',
+                               'Compose new message','width=640,height=480');
+                               
+     return false; 
+}
