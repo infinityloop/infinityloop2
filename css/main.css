@@ -213,42 +213,6 @@ src: url(../fonts/MalleableGrotesque.otf);
     font-size: 180%;
 }
 
-.footerbar {
-    width: 100%;
-    background-color: #303c56;
-    height: 400px;
-}
-
-.footertext {
-    text-align: center;
-    font-family: 'infinityFont';
-    font-size: 400%;
-    color: #ffffff;
-    padding-top: 120px;
-}
-
-.footeremail {
-        text-align: center;
-        font-family: 'Lucida Sans Unicode';
-        padding-top: 20px;
-        font-size: 350%;
-        color: #cc9035;
-}
-
-a:hover { 
-    color: #c4c4c3;
-    text-decoration: none;
-}
-
-.copyright {
-    position: relative;
-    float: right;
-    bottom: 0;
-    color: #c4c4c3;
-    padding-top: 50px;
-    padding-right: 20px;
-}
-
 .spacer {
     margin-top: 80px; /* define margin as you see fit */
 }
@@ -287,6 +251,47 @@ ul,li {
 }
 
 /**
+** Footer 
+**/
+.footerbar {
+    width: 100%;
+    background-color: #303c56;
+    height: 400px;
+}
+
+.footertext {
+    text-align: center;
+    font-family: 'infinityFont';
+    font-size: 400%;
+    color: #ffffff;
+    padding-top: 120px;
+}
+
+.footeremail {
+        text-align: center;
+        font-family: 'Lucida Sans Unicode';
+        padding-top: 20px;
+        font-size: 350%;
+        color: #cc9035;
+}
+
+a:hover { 
+    color: #c4c4c3;
+    text-decoration: none;
+}
+
+.copyright {
+    position: relative;
+    float: right;
+    bottom: 0;
+    color: #c4c4c3;
+    padding-top: 50px;
+    padding-right: 20px;
+}
+
+
+
+/**
 ** Responsive Classes
 **/
 @media (max-width: 1200px) {
@@ -319,8 +324,8 @@ ul,li {
     .icons a {
         height: 40px;
         width: 40px;
-        background-size: 48px 48px;
-        margin: 10px;
+        background-size: 40px 40px;
+        margin: 7px;
     }
     
     .jumbotron .bannertext .subtext {
