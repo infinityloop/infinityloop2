@@ -67,7 +67,7 @@ function cycleQuote(quoteId) {
 }
 
 function displayQuote(quoteId, quote) {
-    $('#'+quoteId + 'text').text('"' + quote.quote + '"');
+    $('#'+quoteId + 'text').text('"' + quote.quote + '" ');
     $('#'+quoteId + 'author').text('  - ' + quote.author + '  ');
         
     $('#'+quoteId + 'container').fadeIn(fadeSpeed);
