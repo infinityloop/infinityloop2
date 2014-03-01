@@ -130,13 +130,11 @@
         </div>
     </div>
     
-    <div id="quote1" class="jumbotron quotebgn" style="background-image: url('img/ferriswheel.jpg');">
+    <div id="quote1" class="jumbotron quotebgn visible-desktop" style="background-image: url('img/ferriswheel.jpg');">
         <div class="container spacer">
             <div class="row">
-                <div id="quote1text" class="quotetext">
-                    <p>"Any sufficiently advanced technology is indistinguishable from magic." <span id="quote1author" class="quoteauthor"> - Arthur C. Clarke </span> </p>
-                </div>
-                <div id="quote1author" class="quoteauthor">
+                <div id="quote1container" class="quotecontainer">
+                    <span id="quote1text" class="quotetext"></span> <br/> <span id="quote1author" class="quoteauthor"></span> 
                 </div>
             </div>
         </div>
@@ -228,13 +226,23 @@
          </div>
      </div>
      
+    <div id="quote2" class="jumbotron quotebgn visible-desktop" style="background-color: #000;">
+        <div class="container spacer">
+            <div class="row">
+                <div id="quote2container" class="quotecontainer">
+                    <span id="quote2text" class="quotetext"></span> <br/> <span id="quote2author" class="quoteauthor"></span> 
+                </div>
+            </div>
+        </div>
+     </div>
+     
      <!-- END -->
       <hr>
 
       <footer class="footerbar visible-desktop spacer" style="background: url('img/banner.png'); ">
         <p class="footertext"> Thanks for dropping by! Questions?</p>
-        <a href="mailto:Kelvin@infinityloop.ca" class="footeremail" onClick="sendGmail();" rel="noreferrer"><p>kelvin@infinityloop.ca</p></a>
-        <p class="copyright">&copy; InfinityLoop 2014</p>
+        <a href="mailto:Kelvin@infinityloop.ca" class="footeremail" onClick="sendGmail();" rel="noreferrer">kelvin@infinityloop.ca</a> <br/>
+        <img src="img/infinityloop.png" class="footerimg" height="96px" width="96px"></img>
       </footer>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>

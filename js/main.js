@@ -11,33 +11,119 @@ $(document).ready(function() {
 });
  
  var showSkills = true;
- 
+ var fadeSpeed = 400;
+ var quote1Timer ;
+ var quote2Timer;
  // Scroll Listener
 $(window).scroll(function() {
         
     if(atActivationPoint($('#quote1'))) {
-        $('#quote1text').fadeIn();
-        $('#quote1author').fadeIn();
-        
+        if($('#quote1container').is(':visible') == false) {
+            var quote = getTechQuote();
+            displayQuote('quote1', quote);
+            window.clearInterval(quote1Timer);
+            quote1Timer = window.setInterval(function() {
+                cycleQuote('quote1');
+            }, 5000);
+        }
     } else {
-        $('#quote1text').fadeOut();
-        $('#quote1author').fadeOut();
+        window.clearInterval(quote1Timer);
+        $('#quote1container').fadeOut(fadeSpeed);
+        $('#quote1text').fadeOut(fadeSpeed);
+        $('#quote1author').fadeOut(fadeSpeed);
+    }
+    
+    if(atActivationPoint($('#quote2'))) {
+        if($('#quote2container').is(':visible') == false) {
+            var quote = getMAQuote();
+            displayQuote('quote2', quote);
+            window.clearInterval(quote2Timer);
+            quote2Timer = window.setInterval(function() {
+                cycleQuote('quote2');
+            }, 5000);
+        }
+    } else {
+        window.clearInterval(quote2Timer);
+        $('#quote2container').fadeOut(fadeSpeed);
+        $('#quote2text').fadeOut(fadeSpeed);
+        $('#quote2author').fadeOut(fadeSpeed);
     }
     
     if(atActivationPoint($('#skills')) && showSkills == true) {
         activateSkills();
         showSkills = false;
     }
-
-    //console.log($('#quote1').innerHeight());
-    //console.log($('#quote1')[0].scrollHeight);
-    //console.log('projectDiv: ' + ($('#projects').position().top - ($(document).scrollTop() + offset * 2)));
-    //console.log('offset: ' + offset);
-    
-    //console.log($('#projects').position().top);
-    //var scrollBottom = $(window).scrollTop() + $(window).height();
-    //console.log($('#projects').position().top - scrollBottom);
 });
+
+function cycleQuote(quoteId) {
+        if($('#' + quoteId + 'container').is(':visible') == true) {
+            $('#' + quoteId + 'container').fadeOut(fadeSpeed);
+            $('#' + quoteId + 'text').fadeOut(fadeSpeed);
+            $('#' + quoteId + 'author').fadeOut(fadeSpeed, function() {
+                var quote = getTechQuote();
+                displayQuote(quoteId, quote);
+            });
+        }
+}
+
+function displayQuote(quoteId, quote) {
+    $('#'+quoteId + 'text').text('"' + quote.quote + '"');
+    $('#'+quoteId + 'author').text('  - ' + quote.author + '  ');
+        
+    $('#'+quoteId + 'container').fadeIn(fadeSpeed);
+    $('#'+quoteId + 'text').fadeIn(fadeSpeed);
+    $('#'+quoteId + 'author').fadeIn(fadeSpeed);   
+}
+
+function getTechQuote() {
+
+    var quoteArray = new Array();
+
+    quoteArray.push(createQuoteObject("Any sufficiently advanced technology is indistinguishable from magic.", "Arthur C. Clarke"));
+    quoteArray.push(createQuoteObject("It's still magic even if you know how it's done.", "Terry Pratchett"));    
+    quoteArray.push(createQuoteObject("I learned not to worry so much about the outcome, but to concentrate on the step I was on and to try to do it as perfectly as I could when I was doing it." , "Steve Wozniak"));
+    quoteArray.push(createQuoteObject("Everyday life is like programming, I guess. If you love something you can put beauty into it." , "Donald Knuth"));
+    quoteArray.push(createQuoteObject("Intelligence is the ability to avoid doing work, yet getting the work done. " , "Linus Torvald"));
+
+    randomReturn = randomIntFromInterval(0, quoteArray.length);
+    return quoteArray[randomReturn];
+}
+
+function getMAQuote() {
+
+    var quoteArray = new Array();
+
+    quoteArray.push(createQuoteObject("Think lightly of yourself and deeply of the world.", "Miyamoto Musashi"));
+    quoteArray.push(createQuoteObject("Learning jiu-jitsu is something for the subconscious, not for the consciousness.", "Helios Gracie"));    
+    quoteArray.push(createQuoteObject("Empty your mind, be formless. Shapeless, like water. If you put water into a cup, it becomes the cup. You put water into a bottle and it becomes the bottle. Be water, my friend." , "Bruce Lee"));
+    quoteArray.push(createQuoteObject("We learn martial arts as helping weakness. You never fight for people to get hurt. You're always helping people." , "Jackie Chan"));
+    quoteArray.push(createQuoteObject("The supreme art of war is to subdue the enemy without fighting." , "Sun Tzu"));
+
+    randomReturn = randomIntFromInterval(0, quoteArray.length);
+    return quoteArray[randomReturn];
+}
+
+
+function createQuoteObject(quote, author) {
+    var object = new Object();
+    object.quote = quote;
+    object.author= author;
+    
+    return object;
+}
+
+var lastNum;
+
+// Make it random, but don't repeat it
+function randomIntFromInterval(min,max)
+{
+    var num =  Math.floor(Math.random()*(max-min)+min);
+    while(num == lastNum) {
+        num =  Math.floor(Math.random()*(max-min)+min);
+    }
+    lastNum = num;
+    return num;
+}
 
 function atActivationPoint($item) {
     var offset = $(window).height()/ 2.5;

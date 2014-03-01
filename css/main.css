@@ -66,26 +66,32 @@ src: url(../fonts/MalleableGrotesque.otf);
     background-position:center; 
 }
 
-.jumbotron .quotetext { 
+.jumbotron .quotecontainer { 
     margin-top: 75px;
     font-family:'Lucida Sans Unicode';
-    text-align: center;
+    vertical-align: middle;
     display: none;
 }
 
-.jumbotron .quotetext p {
+.jumbotron .quotetext {
     color: #ffffff;
     margin: auto;
-    vertical-align: middle;
     font-size: 200%;
+    line-height: 1.2;
+    text-align: justified;
+    text-justify: inter-word;
+    vertical-align: middle;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .jumbotron .quoteauthor {
     font-family:'Lucida Sans Unicode';
     font-style: italic;
     text-align: center;
-    font-size: 30%;
+    font-size: 80%;
     color:  #ffffff;
+    background-color: rgba(0, 0, 0, 0.6);
+    white-space: pre;
     display: none;
 }
 
@@ -256,7 +262,8 @@ ul,li {
 .footerbar {
     width: 100%;
     background-color: #303c56;
-    height: 400px;
+    height: 500px;
+    text-align: center;
 }
 
 .footertext {
@@ -273,6 +280,9 @@ ul,li {
         padding-top: 20px;
         font-size: 350%;
         color: #cc9035;
+}
+
+.footerimg {
 }
 
 a:hover { 
