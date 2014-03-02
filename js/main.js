@@ -23,7 +23,7 @@ $(window).scroll(function() {
             displayQuote('quote1', quote);
             window.clearInterval(quote1Timer);
             quote1Timer = window.setInterval(function() {
-                cycleQuote('quote1');
+                cycleQuote('quote1', 'tech');
             }, 5000);
         }
     } else {
@@ -39,7 +39,7 @@ $(window).scroll(function() {
             displayQuote('quote2', quote);
             window.clearInterval(quote2Timer);
             quote2Timer = window.setInterval(function() {
-                cycleQuote('quote2');
+                cycleQuote('quote2', 'MA');
             }, 5000);
         }
     } else {
@@ -55,12 +55,21 @@ $(window).scroll(function() {
     }
 });
 
-function cycleQuote(quoteId) {
+function cycleQuote(quoteId, type) {
         if($('#' + quoteId + 'container').is(':visible') == true) {
             $('#' + quoteId + 'container').fadeOut(fadeSpeed);
             $('#' + quoteId + 'text').fadeOut(fadeSpeed);
             $('#' + quoteId + 'author').fadeOut(fadeSpeed, function() {
-                var quote = getTechQuote();
+                switch(type) {
+                    case 'tech':
+                        var quote = getTechQuote();
+                        break;
+                    case 'MA':
+                        var quote = getMAQuote();
+                        break;
+                    default:
+                        break;
+                }
                 displayQuote(quoteId, quote);
             });
         }
@@ -77,30 +86,30 @@ function displayQuote(quoteId, quote) {
 
 function getTechQuote() {
 
-    var quoteArray = new Array();
+    var TechquoteArray = new Array();
 
-    quoteArray.push(createQuoteObject("Any sufficiently advanced technology is indistinguishable from magic.", "Arthur C. Clarke"));
-    quoteArray.push(createQuoteObject("It's still magic even if you know how it's done.", "Terry Pratchett"));    
-    quoteArray.push(createQuoteObject("I learned not to worry so much about the outcome, but to concentrate on the step I was on and to try to do it as perfectly as I could when I was doing it." , "Steve Wozniak"));
-    quoteArray.push(createQuoteObject("Everyday life is like programming, I guess. If you love something you can put beauty into it." , "Donald Knuth"));
-    quoteArray.push(createQuoteObject("Intelligence is the ability to avoid doing work, yet getting the work done. " , "Linus Torvald"));
+    TechquoteArray.push(createQuoteObject("Any sufficiently advanced technology is indistinguishable from magic.", "Arthur C. Clarke"));
+    TechquoteArray.push(createQuoteObject("It's still magic even if you know how it's done.", "Terry Pratchett"));    
+    TechquoteArray.push(createQuoteObject("I learned not to worry so much about the outcome, but to concentrate on the step I was on and to try to do it as perfectly as I could when I was doing it." , "Steve Wozniak"));
+    TechquoteArray.push(createQuoteObject("Everyday life is like programming, I guess. If you love something you can put beauty into it." , "Donald Knuth"));
+    TechquoteArray.push(createQuoteObject("Intelligence is the ability to avoid doing work, yet getting the work done. " , "Linus Torvald"));
 
-    randomReturn = randomIntFromInterval(0, quoteArray.length);
-    return quoteArray[randomReturn];
+    randomReturn = randomIntFromInterval(0, TechquoteArray.length);
+    return TechquoteArray[randomReturn];
 }
 
 function getMAQuote() {
 
-    var quoteArray = new Array();
+    var MAquoteArray = new Array();
 
-    quoteArray.push(createQuoteObject("Think lightly of yourself and deeply of the world.", "Miyamoto Musashi"));
-    quoteArray.push(createQuoteObject("Learning jiu-jitsu is something for the subconscious, not for the consciousness.", "Helios Gracie"));    
-    quoteArray.push(createQuoteObject("Empty your mind, be formless. Shapeless, like water. If you put water into a cup, it becomes the cup. You put water into a bottle and it becomes the bottle. Be water, my friend." , "Bruce Lee"));
-    quoteArray.push(createQuoteObject("We learn martial arts as helping weakness. You never fight for people to get hurt. You're always helping people." , "Jackie Chan"));
-    quoteArray.push(createQuoteObject("The supreme art of war is to subdue the enemy without fighting." , "Sun Tzu"));
+    MAquoteArray.push(createQuoteObject("Think lightly of yourself and deeply of the world.", "Miyamoto Musashi"));
+    MAquoteArray.push(createQuoteObject("Learning jiu-jitsu is something for the subconscious, not for the consciousness.", "Helios Gracie"));    
+    MAquoteArray.push(createQuoteObject("Empty your mind, be formless. Shapeless, like water. If you put water into a cup, it becomes the cup. You put water into a bottle and it becomes the bottle. Be water, my friend." , "Bruce Lee"));
+    MAquoteArray.push(createQuoteObject("We learn martial arts as helping weakness. You never fight for people to get hurt. You're always helping people." , "Jackie Chan"));
+    MAquoteArray.push(createQuoteObject("The supreme art of war is to subdue the enemy without fighting." , "Sun Tzu"));
 
-    randomReturn = randomIntFromInterval(0, quoteArray.length);
-    return quoteArray[randomReturn];
+    randomReturn = randomIntFromInterval(0, MAquoteArray.length);
+    return MAquoteArray[randomReturn];
 }
 
 
