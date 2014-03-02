@@ -337,6 +337,7 @@ a:hover {
         width: 40px;
         background-size: 40px 40px;
         margin: 7px;
+        margin-bottom: 30px;
     }
     
     .jumbotron .bannertext .subtext {
