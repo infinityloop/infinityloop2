@@ -275,14 +275,15 @@ ul,li {
 }
 
 .footeremail {
-        text-align: center;
-        font-family: 'Lucida Sans Unicode';
-        padding-top: 20px;
-        font-size: 350%;
-        color: #cc9035;
+    text-align: center;
+    font-family: 'Lucida Sans Unicode';
+    padding-top: 20px;
+    font-size: 350%;
+    color: #cc9035;
 }
 
 .footerimg {
+    margin-top: 40px;
 }
 
 a:hover { 
