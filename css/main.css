@@ -219,6 +219,10 @@ src: url(../fonts/MalleableGrotesque.otf);
     font-size: 180%;
 }
 
+.timelineCol {
+    padding-right: 0px;
+}
+
 .spacer {
     margin-top: 80px; /* define margin as you see fit */
 }
