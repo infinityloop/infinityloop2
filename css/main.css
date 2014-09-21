@@ -5,16 +5,16 @@
    ========================================================================== */
 @font-face
 {
-font-family: 'infinityFont';
-src: url(../fonts/MalleableGrotesque.otf);
+    font-family: 'infinityFont';
+    src: url(../fonts/MalleableGrotesque.otf);
 }
 
 @font-face
 {
-font-family: 'Lucida Sans Unicode';
-src: url(../fonts/lucidasansunicode.ttf);
-}
-   
+    font-family: 'Lucida Sans Unicode';
+    src: url(../fonts/lucidasansunicode.ttf);
+}   
+
  .whitefont {
     color:#ffffff;
  }
@@ -58,9 +58,10 @@ src: url(../fonts/lucidasansunicode.ttf);
  }
  
 .jumbotron .bannertext {
-    margin-left: 70px;
-    padding-top: 60px;
+    margin-left: 15%;
+    padding-top: 10%;
     float: left;
+    vertical-align: middle;
 }
 
 .quotebgn {
