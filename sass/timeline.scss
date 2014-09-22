@@ -209,7 +209,6 @@ label {
     text-overflow: ellipsis;
     overflow: hidden;
     display: block;
-<<<<<<< HEAD
     top: 42px;
     left: 2px;
   }
@@ -220,18 +219,6 @@ label {
 }
 
 .timeline-radio:checked {
-=======
-    top: 60px;
-    left: 15px;
-  }
-}
-
-.radio {
-  display: none;
-}
-
-.radio:checked {
->>>>>>> 914c132d2c9bdab46e815ced9ac388835a41d6f2
   & + .relative {
     label {
       cursor: auto;
@@ -244,19 +231,11 @@ label {
       }
     }
     .circle {
-<<<<<<< HEAD
       background: $innerCircle;
     }
   }
   & ~ .content {
     max-height: 400px;
-=======
-      background: $red;
-    }
-  }
-  & ~ .content {
-    max-height: 180px;
->>>>>>> 914c132d2c9bdab46e815ced9ac388835a41d6f2
     border-color: $blue;
     @if $vertical {
       margin-right: 20px;
@@ -268,10 +247,7 @@ label {
     }
     p {
       max-height: 200px;
-<<<<<<< HEAD
       margin: 0;
-=======
->>>>>>> 914c132d2c9bdab46e815ced9ac388835a41d6f2
       color: $blue;
       transition: color 0.3s linear 0.3s;
     }
