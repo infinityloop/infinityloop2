@@ -396,40 +396,48 @@ a:hover {
 /**
 ** Responsive Classes
 **/
+@media (min-width: 1920px) {
+  /* line 317, ../sass/main.scss */
+  .jumbotron .bannertext {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
 @media (max-width: 1200px) {
-  /* line 318, ../sass/main.scss */
+  /* line 327, ../sass/main.scss */
   .jumbotron .bannertext h1.title {
     font-size: 80px;
   }
 
-  /* line 321, ../sass/main.scss */
+  /* line 330, ../sass/main.scss */
   .spacer {
     margin-top: 0;
     /* define margin as you see fit */
   }
 
-  /* line 325, ../sass/main.scss */
+  /* line 334, ../sass/main.scss */
   .visible-desktop {
     display: none;
   }
 
-  /* line 329, ../sass/main.scss */
+  /* line 338, ../sass/main.scss */
   .quotebgn {
     background-size: cover;
   }
 
-  /* line 333, ../sass/main.scss */
+  /* line 342, ../sass/main.scss */
   .jumbotron .quotetext p {
     font-size: 120%;
   }
 }
 @media (max-width: 620px) {
-  /* line 340, ../sass/main.scss */
+  /* line 349, ../sass/main.scss */
   .jumbotron .bannertext h1.title {
     font-size: 50px;
   }
 
-  /* line 343, ../sass/main.scss */
+  /* line 352, ../sass/main.scss */
   .icons a {
     height: 40px;
     width: 40px;
@@ -438,19 +446,19 @@ a:hover {
     margin-bottom: 30px;
   }
 
-  /* line 351, ../sass/main.scss */
+  /* line 360, ../sass/main.scss */
   .jumbotron .bannertext .subtext {
     color: #cc9035;
     font-family: Lucida Sans Unicode;
     font-size: 80%;
   }
 
-  /* line 357, ../sass/main.scss */
+  /* line 366, ../sass/main.scss */
   .quotebgn {
     display: none;
   }
 
-  /* line 361, ../sass/main.scss */
+  /* line 370, ../sass/main.scss */
   .abouttext {
     font-size: 80%;
   }

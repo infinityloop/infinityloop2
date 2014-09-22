@@ -313,6 +313,15 @@ a:hover {
 /**
 ** Responsive Classes
 **/
+@media (min-width: 1920px) {
+    .jumbotron .bannertext {
+        width:100%;
+        margin: 0 auto;
+        text-align:center;
+    }
+
+}
+
 @media (max-width: 1200px) {
     
     .jumbotron .bannertext h1.title {
