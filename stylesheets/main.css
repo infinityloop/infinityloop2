@@ -1,0 +1,457 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+@font-face {
+  font-family: 'infinityFont';
+  src: url(../fonts/MalleableGrotesque.otf);
+}
+@font-face {
+  font-family: 'Lucida Sans Unicode';
+  src: url(../fonts/lucidasansunicode.ttf);
+}
+/* line 18, ../sass/main.scss */
+.whitefont {
+  color: #ffffff;
+}
+
+/* line 21, ../sass/main.scss */
+.yellowfont {
+  color: #cc9035;
+}
+
+/* line 24, ../sass/main.scss */
+.greyfont {
+  font-family: 'infinityFont';
+  font-size: 140%;
+  color: #9b8579;
+}
+
+/* line 29, ../sass/main.scss */
+.greyfont h2 {
+  font-family: 'infinityFont';
+  font-size: 200%;
+  color: #9b8579;
+}
+
+/* line 35, ../sass/main.scss */
+.bluefont {
+  font-family: 'Lucida Sans Unicode';
+  color: #303c56;
+}
+
+/* line 40, ../sass/main.scss */
+.justified {
+  text-align: justify;
+  padding-bottom: 10px;
+}
+
+/* line 45, ../sass/main.scss */
+.jumbotron {
+  padding-top: 0px;
+  -webkit-box-shadow: 5px 5px 10px 0px rgba(50, 50, 50, 0.64);
+  -moz-box-shadow: 5px 5px 10px 0px rgba(50, 50, 50, 0.64);
+  box-shadow: 5px 5px 10px 0px rgba(50, 50, 50, 0.64);
+}
+
+/* line 52, ../sass/main.scss */
+.bluebgn {
+  background-color: #303c56;
+}
+
+/* line 56, ../sass/main.scss */
+.greybgn {
+  background-color: #c4c4c3;
+}
+
+/* line 60, ../sass/main.scss */
+.jumbotron .bannertext {
+  margin-left: 15%;
+  padding-top: 10%;
+  float: left;
+  vertical-align: middle;
+}
+
+/* line 67, ../sass/main.scss */
+.quotebgn {
+  height: 350px;
+  background-color: black;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+/* line 76, ../sass/main.scss */
+.jumbotron .quotecontainer {
+  margin-top: 75px;
+  font-family: 'Lucida Sans Unicode';
+  vertical-align: middle;
+  display: none;
+}
+
+/* line 83, ../sass/main.scss */
+.jumbotron .quotetext {
+  color: #ffffff;
+  margin: auto;
+  font-size: 200%;
+  line-height: 1.2;
+  text-align: justified;
+  text-justify: inter-word;
+  vertical-align: middle;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* line 94, ../sass/main.scss */
+.jumbotron .quoteauthor {
+  font-family: 'Lucida Sans Unicode';
+  font-style: italic;
+  text-align: center;
+  font-size: 80%;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.6);
+  white-space: pre;
+  display: none;
+}
+
+/* line 105, ../sass/main.scss */
+.jumbotron .bannertext .title {
+  color: #ffffff;
+  font-family: 'infinityFont';
+  font-size: 96px;
+}
+
+/* line 111, ../sass/main.scss */
+.jumbotron .bannertext .subtext {
+  color: #cc9035;
+  font-family: Lucida Sans Unicode;
+  font-size: 100%;
+}
+
+/* line 117, ../sass/main.scss */
+.jumbotron img.bannerimg {
+  float: right;
+  margin-right: 150px;
+  -webkit-box-shadow: 5px 5px 10px 0px rgba(50, 50, 50, 0.64);
+  -moz-box-shadow: 5px 5px 10px 0px rgba(50, 50, 50, 0.64);
+  box-shadow: 5px 5px 10px 0px rgba(50, 50, 50, 0.64);
+}
+
+/* line 125, ../sass/main.scss */
+.sectionheader {
+  margin-top: 0;
+  font-size: 48px;
+}
+
+/* line 130, ../sass/main.scss */
+#projects {
+  min-height: 450px;
+}
+
+/* line 135, ../sass/main.scss */
+.skillBlock {
+  height: 70px;
+  display: none;
+}
+
+/* line 140, ../sass/main.scss */
+.skillBlock .php {
+  text-align: right;
+  background-image: -ms-linear-gradient(left, #eff0f0 0%, #99c 60%);
+  /* IE10 Consumer Preview */
+  background-image: -moz-linear-gradient(left, #eff0f0 0%, #99c 60%);
+  /* Mozilla Firefox */
+  background-image: -o-linear-gradient(left, #eff0f0 0%, #99c 60%);
+  /* Opera */
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #eff0f0), color-stop(0.6, #99c));
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-linear-gradient(left, #eff0f0 0%, #99c 60%);
+  /* Webkit (Chrome 11+) */
+  background-image: linear-gradient(to right, #eff0f0 0%, #99c 60%);
+  /* W3C Markup, IE10 Release Preview */
+}
+
+/* line 150, ../sass/main.scss */
+.skillBlock .html5 {
+  text-align: left;
+  background-image: -ms-linear-gradient(right, #eff0f0 0%, #e34a22 60%);
+  /* IE10 Consumer Preview */
+  background-image: -moz-linear-gradient(right, #eff0f0 0%, #e34a22 60%);
+  /* Mozilla Firefox */
+  background-image: -o-linear-gradient(right, #eff0f0 0%, #e34a22 60%);
+  /* Opera */
+  background-image: -webkit-gradient(linear, right top, left top, color-stop(0, #eff0f0), color-stop(0.6, #e34a22));
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-linear-gradient(right, #eff0f0 0%, #e34a22 60%);
+  /* Webkit (Chrome 11+) */
+  background-image: linear-gradient(to left, #eff0f0 0%, #e34a22 60%);
+  /* W3C Markup, IE10 Release Preview */
+}
+
+/* line 160, ../sass/main.scss */
+.skillBlock .jquery {
+  text-align: right;
+  background-image: -ms-linear-gradient(left, #eff0f0 0%, #0769AD 60%);
+  /* IE10 Consumer Preview */
+  background-image: -moz-linear-gradient(left, #eff0f0 0%, #0769AD 60%);
+  /* Mozilla Firefox */
+  background-image: -o-linear-gradient(left, #eff0f0 0%, #0769AD 60%);
+  /* Opera */
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #eff0f0), color-stop(0.6, #0769AD));
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-linear-gradient(left, #eff0f0 0%, #0769AD 60%);
+  /* Webkit (Chrome 11+) */
+  background-image: linear-gradient(to right, #eff0f0 0%, #0769AD 60%);
+  /* W3C Markup, IE10 Release Preview */
+}
+
+/* line 170, ../sass/main.scss */
+.skillBlock .css3 {
+  text-align: left;
+  background-image: -ms-linear-gradient(right, #eff0f0 0%, #8AC007 60%);
+  /* IE10 Consumer Preview */
+  background-image: -moz-linear-gradient(right, #eff0f0 0%, #8AC007 60%);
+  /* Mozilla Firefox */
+  background-image: -o-linear-gradient(right, #eff0f0 0%, #8AC007 60%);
+  /* Opera */
+  background-image: -webkit-gradient(linear, right top, left top, color-stop(0, #eff0f0), color-stop(0.6, #8AC007));
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-linear-gradient(right, #eff0f0 0%, #8AC007 60%);
+  /* Webkit (Chrome 11+) */
+  background-image: linear-gradient(to left, #eff0f0 0%, #8AC007 60%);
+  /* W3C Markup, IE10 Release Preview */
+}
+
+/* line 180, ../sass/main.scss */
+.skillBlock .mysql {
+  text-align: right;
+  background-image: -ms-linear-gradient(left, #eff0f0 0%, #e97b00 60%);
+  /* IE10 Consumer Preview */
+  background-image: -moz-linear-gradient(left, #eff0f0 0%, #e97b00 60%);
+  /* Mozilla Firefox */
+  background-image: -o-linear-gradient(left, #eff0f0 0%, #e97b00 60%);
+  /* Opera */
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #eff0f0), color-stop(0.6, #e97b00));
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-linear-gradient(left, #eff0f0 0%, #e97b00 60%);
+  /* Webkit (Chrome 11+) */
+  background-image: linear-gradient(to right, #eff0f0 0%, #e97b00 60%);
+  /* W3C Markup, IE10 Release Preview */
+}
+
+/* line 190, ../sass/main.scss */
+.skillBlock .csharp {
+  text-align: left;
+  background-image: -ms-linear-gradient(right, #eff0f0 0%, #68217a 60%);
+  /* IE10 Consumer Preview */
+  background-image: -moz-linear-gradient(right, #eff0f0 0%, #68217a 60%);
+  /* Mozilla Firefox */
+  background-image: -o-linear-gradient(right, #eff0f0 0%, #68217a 60%);
+  /* Opera */
+  background-image: -webkit-gradient(linear, right top, left top, color-stop(0, #eff0f0), color-stop(0.6, #68217a));
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-linear-gradient(right, #eff0f0 0%, #68217a 60%);
+  /* Webkit (Chrome 11+) */
+  background-image: linear-gradient(to left, #eff0f0 0%, #68217a 60%);
+  /* W3C Markup, IE10 Release Preview */
+}
+
+/* line 200, ../sass/main.scss */
+.skillBlock .java {
+  text-align: right;
+  background-image: -ms-linear-gradient(left, #eff0f0 0%, #DE0000 60%);
+  /* IE10 Consumer Preview */
+  background-image: -moz-linear-gradient(left, #eff0f0 0%, #DE0000 60%);
+  /* Mozilla Firefox */
+  background-image: -o-linear-gradient(left, #eff0f0 0%, #DE0000 60%);
+  /* Opera */
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #eff0f0), color-stop(0.6, #DE0000));
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-linear-gradient(left, #eff0f0 0%, #DE0000 60%);
+  /* Webkit (Chrome 11+) */
+  background-image: linear-gradient(to right, #eff0f0 0%, #DE0000 60%);
+  /* W3C Markup, IE10 Release Preview */
+}
+
+/* line 211, ../sass/main.scss */
+.skillBlock .c {
+  text-align: left;
+  background-image: -ms-linear-gradient(right, #eff0f0 0%, #99C0FF 60%);
+  /* IE10 Consumer Preview */
+  background-image: -moz-linear-gradient(right, #eff0f0 0%, #99C0FF 60%);
+  /* Mozilla Firefox */
+  background-image: -o-linear-gradient(right, #eff0f0 0%, #99C0FF 60%);
+  /* Opera */
+  background-image: -webkit-gradient(linear, right top, left top, color-stop(0, #eff0f0), color-stop(0.6, #99C0FF));
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-linear-gradient(right, #eff0f0 0%, #99C0FF 60%);
+  /* Webkit (Chrome 11+) */
+  background-image: linear-gradient(to left, #eff0f0 0%, #99C0FF 60%);
+  /* W3C Markup, IE10 Release Preview */
+}
+
+/* line 221, ../sass/main.scss */
+.skillFont {
+  color: #fff;
+  font-family: 'infinityFont';
+  font-size: 180%;
+}
+
+/* line 227, ../sass/main.scss */
+.timelineCol {
+  padding-right: 0px;
+}
+
+/* line 231, ../sass/main.scss */
+.spacer {
+  margin-top: 80px;
+  /* define margin as you see fit */
+}
+
+/* line 235, ../sass/main.scss */
+ul, li {
+  color: #303c56;
+  list-style-type: none;
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 10px;
+  font-family: Lucida Sans Unicode;
+  font-size: 90%;
+}
+
+/**
+** Social Media Icons
+**/
+/* line 249, ../sass/main.scss */
+.icons {
+  text-align: center;
+}
+
+/* line 253, ../sass/main.scss */
+.icons a {
+  display: inline-block;
+  height: 64px;
+  width: 64px;
+  background-size: 64px 64px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin: 15px;
+  text-indent: -9999em;
+  background-color: #1c2638;
+  -webkit-box-shadow: 5px 5px 10px 0px rgba(50, 50, 50, 0.64);
+  -moz-box-shadow: 5px 5px 10px 0px rgba(50, 50, 50, 0.64);
+  box-shadow: 5px 5px 10px 0px rgba(50, 50, 50, 0.64);
+}
+
+/**
+** Footer 
+**/
+/* line 271, ../sass/main.scss */
+.footerbar {
+  width: 100%;
+  background-color: #303c56;
+  height: 500px;
+  text-align: center;
+}
+
+/* line 278, ../sass/main.scss */
+.footertext {
+  text-align: center;
+  font-family: 'infinityFont';
+  font-size: 400%;
+  color: #ffffff;
+  padding-top: 120px;
+}
+
+/* line 286, ../sass/main.scss */
+.footeremail {
+  text-align: center;
+  font-family: 'Lucida Sans Unicode';
+  padding-top: 20px;
+  font-size: 350%;
+  color: #cc9035;
+}
+
+/* line 294, ../sass/main.scss */
+.footerimg {
+  margin-top: 40px;
+}
+
+/* line 298, ../sass/main.scss */
+a:hover {
+  color: #c4c4c3;
+  text-decoration: none;
+}
+
+/* line 303, ../sass/main.scss */
+.copyright {
+  position: relative;
+  float: right;
+  bottom: 0;
+  color: #c4c4c3;
+  padding-top: 50px;
+  padding-right: 20px;
+}
+
+/**
+** Responsive Classes
+**/
+@media (max-width: 1200px) {
+  /* line 319, ../sass/main.scss */
+  .jumbotron .bannertext h1.title {
+    font-size: 80px;
+  }
+
+  /* line 322, ../sass/main.scss */
+  .spacer {
+    margin-top: 0;
+    /* define margin as you see fit */
+  }
+
+  /* line 326, ../sass/main.scss */
+  .visible-desktop {
+    display: none;
+  }
+
+  /* line 330, ../sass/main.scss */
+  .quotebgn {
+    background-size: cover;
+  }
+
+  /* line 334, ../sass/main.scss */
+  .jumbotron .quotetext p {
+    font-size: 120%;
+  }
+}
+@media (max-width: 620px) {
+  /* line 341, ../sass/main.scss */
+  .jumbotron .bannertext h1.title {
+    font-size: 50px;
+  }
+
+  /* line 344, ../sass/main.scss */
+  .icons a {
+    height: 40px;
+    width: 40px;
+    background-size: 40px 40px;
+    margin: 7px;
+    margin-bottom: 30px;
+  }
+
+  /* line 352, ../sass/main.scss */
+  .jumbotron .bannertext .subtext {
+    color: #cc9035;
+    font-family: Lucida Sans Unicode;
+    font-size: 80%;
+  }
+
+  /* line 358, ../sass/main.scss */
+  .quotebgn {
+    display: none;
+  }
+
+  /* line 362, ../sass/main.scss */
+  .abouttext {
+    font-size: 80%;
+  }
+}

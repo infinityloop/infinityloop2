@@ -20,7 +20,9 @@
             }
         </style>
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="stylesheets/main.css">
+        <link rel="stylesheet" href="stylesheets/timeline.css">
+
         <link rel="stylesheet" href="css/timeline.css">
 
 
@@ -142,21 +144,87 @@
         </div>
 
         <div id="projects" class="container spacer visible-desktop">
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="sectionheader greyfont">Development Projects</h1>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="sectionheader greyfont">Development Projects</h1>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div id="projectcontainer" class="container">
-                 <div id="projectsquares0" class="projectsquare" style="background-image: url('img/projects/tedx.png'); height: 300px; width: 644px;"></div>
-                 <div id="projectsquares1" class="projectsquare" style="background-image: url('img/projects/spiced.png'); height: 300px; width: 300px;"></div>
-                 <div id="projectsquares2" class="projectsquare" style="background-image: url('img/projects/anan.jpg'); height: 250px; width: 250px;"></div>
-                 <div id="projectsquares3" class="projectsquare" style="background-image: url('img/projects/metavera.png'); height: 113px; width: 337px;"></div>
-                 <div id="projectsquares4" class="projectsquare" style="background-image: url('img/projects/dealerflow.png'); height: 110px; width: 424px;"></div>
-                 <div id="projectsquares5" class="projectsquare" style="background-image: url('img/projects/yourproject.png'); height: 267px; width: 400px;"></div>
-             </div>
-         </div>
+            <div class="row ">
+                <div class="col-lg-12 container">
+                    <ul id="timeline">
+                        <li class='work'>
+                            <input class='timeline-radio' id='work1' name='works' type='radio'>
+                            <div class="relative">
+                              <label for='work1'><div class="timeline-logo" style="background:url('img/projects/uog.png') no-repeat center;" ></div></label>
+                              <span class='timeline-date'>September 2007<br>to April 2012</span>
+                              <span class='circle'></span>
+                            </div>
+                            <div class='content'>
+                            <br><br>
+                              <p>
+                                Kelvin enrolled into University of Guelph as a political science major but soon found that he could never quite shake the passion for computers and technology.
+                                <br><br>
+                                In addition to his academic studies, he also participated as an executive member of the computer science club, a board member of the College of Physical and Engineering Science, and a board representative for the college on the Central Student Association.
+                                <br><br>
+                                Kelvin graduated with honors in Bachelor of Computing, with a minor in Business Administration.
+                              </p>
+                            </div>
+                        </li>
+                        <li class='work'>
+                            <input class='timeline-radio' id='work2' name='works' type='radio'>
+                            <div class="relative">
+                              <label for='work2'><div class="timeline-logo" style="background:url('img/projects/riot.png') no-repeat center;" ></div></label>
+                              <span class='timeline-date'>April 2012<br>to July 2012</span>
+                              <span class='circle'></span>
+                            </div>
+                            <div class='content'>
+                            <br><br>
+                              <p>
+                                As an avid gamer and a player of the popular online multiplayer game "League of Legends", Kelvin was recruited upon graduation as an assistant producer and scrum master for the Los Angelos based company Riot Games.
+                                <br><br>
+                                During this time, he learnt agile development concepts and best in class development practices from one of the leading experts in the field of online gaming.
+                              </p>
+                            </div>
+                        </li>
+                        <li class='work'>
+                            <input class='timeline-radio' id='work3' name='works' type='radio'>
+                            <div class="relative">
+                              <label for='work3'><div class="timeline-logo" style="background:url('img/projects/metavera.png') no-repeat center;" ></div></label>
+                              <span class='timeline-date'>October 2012<br>to March 2014</span>
+                              <span class='circle'></span>
+                            </div>
+                            <div class='content'>
+                            <br><br>
+                              <p>
+                                Having experienced first hand the the development culture of Riot Games, Kelvin returned to Toronto to once again pursue his dream of being a world class software developer.
+                                <br><br>
+                                He applied his experiences in agile development with Metavera Solutions, an internationally renown software company in the emerging field of car sharing.
+                                <br><br>
+                                Despite having never developed for Software as a Service platforms, Kelvin went above and beyond to be charged with DealerFlow, a full-stack development project utilizing PHP, Javascript, and PostgreSql.
+                              </p>
+                            </div>
+                        </li>
+                        <li class='work'>
+                            <input class='timeline-radio' id='work4' name='works' type='radio'>
+                            <div class="relative">
+                              <label for='work4'><div class="timeline-logo" style="background:url('img/projects/achievers.png') no-repeat center;" ></div></label>
+                              <span class='timeline-date'>March 2014<br>to Current</span>
+                              <span class='circle'></span>
+                            </div>
+                            <div class='content'>
+                            <br><br>
+                              <p>
+                                Having completed the development for DealerFlow, Kelvin joined the Toronto employee engagement software company Achievers as a full stack software developer.
+                                <br><br>
+                                He is regularly recognized for his skills in applying the best concepts of agile web development while striving to expand his knowledge in software development.
+                                <br><br>
+                                After a short six months with Achievers, Kelvin was promoted to work within their more specialized mobile development team.
+                              </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
         <div id="skills" class="container spacer visible-desktop">
@@ -250,7 +318,7 @@
                     <ul class='timeline v2'>
                         <li class="year first">2008</li>
 
-                        <li class='event right'>
+                        <li class='event  '>
                             <p class="eventdate"> Nov<br/>13 </p>
                             <p class="eventtext">Joined Sei Do Kai at University of Guelph. Began training Musō Jikiden Eishin-ryū iaido under Kim Taylor, 7th Dan Renshi</p>
                         </li>
@@ -267,15 +335,11 @@
                         <li class="year">2013</li>
                         <li class="event right">
                             <p class="eventdate">Aug<br/>17</p>
-                            <p class="eventtext">Joined Mu Mon Kai at Japanese Canadian Cultural Center under Goyo Ohmi, 7th Dan Kyoshi</p>
+                            <p class="eventtext">Joined Mu Mon Kai, Japanese Canadian Cultural Center under Goyo Ohmi, 7th Dan Kyoshi</p>
                         </li>
                         <li class="event">
                             <p class="eventdate">Nov<br/>4</p>
-                            <p class="eventtext">Joined OpenMat MMA Academy. Began training Brazillian Jiu-Jitsu under Elliot Bayev, Black Belt</p>
-                        </li>
-                        <li class="event">
-                            <p class="eventdate">Nov<br/>27</p>
-                            <p class="eventtext">Attained white belt,<br/>first stripe</p>
+                            <p class="eventtext">Joined OpenMat MMA. Began training Brazillian Jiu-Jitsu under Elliot Bayev, Black Belt</p>
                         </li>
                         <li class="event right">
                             <p class="eventdate">Dec<br/>7</p>
@@ -283,12 +347,8 @@
                         </li>
                         <li class="year">2014</li>
                         <li class="event">
-                            <p class="eventdate">Jan<br/>29</p>
-                            <p class="eventtext">Attained white belt,<br/>second stripe</p>
-                        </li>
-                        <li class="event">
-                            <p class="eventdate">Feb<br/>26</p>
-                            <p class="eventtext">Attained white belt,<br/>third stripe</p>
+                            <p class="eventdate">Mar<br/>26</p>
+                            <p class="eventtext">Attained white belt,<br/>first stripe</p>
                         </li>
                     </ul>
                 </div>

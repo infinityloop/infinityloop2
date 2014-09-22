@@ -1,15 +1,3 @@
-$(document).ready(function() {
-    // Initialize the isotop project area
-    $('#projectcontainer').isotope({
-        itemSelector: '.projectsquare',
-        sortBy: 'random',
-        masonry: {
-            columnWidth: 10
-         }
-    });
-    
-});
- 
  var showSkills = true;
  var fadeSpeed = 400;
  var quote1Timer ;

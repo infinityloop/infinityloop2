@@ -1,0 +1,161 @@
+/* -------------------------------------
+ * For horizontal version, set the
+ * $vertical variable to false
+ * ------------------------------------- */
+/* -------------------------------------
+ * General Style
+ * ------------------------------------- */
+/* line 16, ../sass/timeline.scss */
+body {
+  margin: 0;
+}
+
+/* -------------------------------------
+ * timeline
+ * ------------------------------------- */
+/* line 31, ../sass/timeline.scss */
+#timeline {
+  list-style: none;
+  margin: 120px 0 0;
+  padding: 0;
+  border-top: 8px solid #303c56;
+  display: table;
+  border-spacing: 20px 0;
+}
+/* line 45, ../sass/timeline.scss */
+#timeline li {
+  display: table-cell;
+}
+/* line 53, ../sass/timeline.scss */
+#timeline li .relative {
+  position: relative;
+}
+
+/* line 60, ../sass/timeline.scss */
+.timeline-logo {
+  position: relative;
+  width: 197px;
+  height: 65px;
+  overflow: hidden;
+}
+
+/* line 67, ../sass/timeline.scss */
+.timeline-date {
+  text-align: center;
+  top: -55px;
+  left: 0;
+  right: 0;
+  font-size: 1.25em;
+  line-height: 20px;
+  position: absolute;
+}
+
+/* line 84, ../sass/timeline.scss */
+.circle {
+  margin: 0 auto;
+  top: -14px;
+  left: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background: #eff0f0;
+  border: 5px solid #303c56;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+}
+
+/* line 105, ../sass/timeline.scss */
+.content {
+  width: 200px;
+  max-height: 0;
+  margin-top: 40px;
+  vertical-align: top;
+  padding: 50px 15px 15px;
+  transition: width 0.4s linear, max-height 0.4s linear;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 0.5em;
+  position: relative;
+}
+/* line 123, ../sass/timeline.scss */
+.content:before, .content:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border: solid transparent;
+  position: absolute;
+  pointer-events: none;
+  bottom: 100%;
+}
+/* line 137, ../sass/timeline.scss */
+.content:before {
+  border-bottom-color: inherit;
+  border-width: 15px;
+  left: 50%;
+  margin-left: -15px;
+}
+/* line 151, ../sass/timeline.scss */
+.content:after {
+  border-bottom-color: #eff0f0;
+  border-width: 12px;
+  left: 50%;
+  margin-left: -12px;
+}
+/* line 165, ../sass/timeline.scss */
+.content p {
+  max-height: 0;
+  color: transparent;
+  text-align: justify;
+  word-break: break-word;
+  hyphens: auto;
+  overflow: hidden;
+}
+
+/* line 175, ../sass/timeline.scss */
+label {
+  font-size: 1.3em;
+  position: absolute;
+  z-index: 100;
+  cursor: pointer;
+  width: 200px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: block;
+  top: 42px;
+  left: 2px;
+}
+
+/* line 195, ../sass/timeline.scss */
+.timeline-radio {
+  display: none;
+}
+
+/* line 201, ../sass/timeline.scss */
+.timeline-radio:checked + .relative label {
+  cursor: auto;
+  width: 400px;
+  transition: width 0.3s linear 0.2s;
+}
+/* line 211, ../sass/timeline.scss */
+.timeline-radio:checked + .relative .circle {
+  background: #cc9035;
+}
+/* line 215, ../sass/timeline.scss */
+.timeline-radio:checked ~ .content {
+  max-height: 400px;
+  border-color: #303c56;
+  width: 400px;
+}
+/* line 226, ../sass/timeline.scss */
+.timeline-radio:checked ~ .content p {
+  max-height: 200px;
+  margin: 0;
+  color: #303c56;
+  transition: color 0.3s linear 0.3s;
+}
+
+/* -------------------------------------
+ * mobile phones (vertical version only)
+ * ------------------------------------- */

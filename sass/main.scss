@@ -1,0 +1,377 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+@font-face
+{
+    font-family: 'infinityFont';
+    src: url(../fonts/MalleableGrotesque.otf);
+}
+
+@font-face
+{
+    font-family: 'Lucida Sans Unicode';
+    src: url(../fonts/lucidasansunicode.ttf);
+}   
+
+ .whitefont {
+    color:#ffffff;
+ }
+ .yellowfont {
+    color: #cc9035;
+ }
+.greyfont {
+    font-family:'infinityFont';
+    font-size: 140%;
+    color: #9b8579;
+}
+.greyfont h2{
+    font-family:'infinityFont';
+    font-size: 200%;
+    color: #9b8579;
+}
+
+.bluefont {
+    font-family:'Lucida Sans Unicode';
+    color: #303c56;
+}
+
+.justified {
+    text-align: justify;
+    padding-bottom: 10px;
+}
+
+.jumbotron {
+    padding-top: 0px;
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(50, 50, 50, 0.64);
+    -moz-box-shadow:    5px 5px 10px 0px rgba(50, 50, 50, 0.64);
+    box-shadow:         5px 5px 10px 0px rgba(50, 50, 50, 0.64);
+}
+
+.bluebgn {
+    background-color: #303c56;
+ }
+ 
+ .greybgn {
+    background-color: #c4c4c3;
+ }
+ 
+.jumbotron .bannertext {
+    margin-left: 15%;
+    padding-top: 10%;
+    float: left;
+    vertical-align: middle;
+}
+
+.quotebgn {
+    height: 350px;
+    background-color: black;
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    background-size: contain;
+    background-position:center; 
+}
+
+.jumbotron .quotecontainer { 
+    margin-top: 75px;
+    font-family:'Lucida Sans Unicode';
+    vertical-align: middle;
+    display: none;
+}
+
+.jumbotron .quotetext {
+    color: #ffffff;
+    margin: auto;
+    font-size: 200%;
+    line-height: 1.2;
+    text-align: justified;
+    text-justify: inter-word;
+    vertical-align: middle;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.jumbotron .quoteauthor {
+    font-family:'Lucida Sans Unicode';
+    font-style: italic;
+    text-align: center;
+    font-size: 80%;
+    color:  #ffffff;
+    background-color: rgba(0, 0, 0, 0.6);
+    white-space: pre;
+    display: none;
+}
+
+.jumbotron .bannertext .title {
+    color: #ffffff;
+    font-family:'infinityFont';
+    font-size: 96px;
+}
+
+.jumbotron .bannertext .subtext {
+    color: #cc9035;
+    font-family: Lucida Sans Unicode;
+    font-size: 100%;
+}
+
+.jumbotron img.bannerimg {
+    float: right;
+    margin-right: 150px;
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(50, 50, 50, 0.64);
+    -moz-box-shadow:    5px 5px 10px 0px rgba(50, 50, 50, 0.64);
+    box-shadow:         5px 5px 10px 0px rgba(50, 50, 50, 0.64);
+}
+
+.sectionheader {
+    margin-top: 0;
+    font-size: 48px;
+}
+
+#projects{
+    min-height:450px;
+}
+
+
+.skillBlock {
+    height: 70px;
+    display: none;
+}
+
+.skillBlock .php {
+    text-align: right;
+    background-image: -ms-linear-gradient(left, #eff0f0 0%, #99c 60%); /* IE10 Consumer Preview */ 
+    background-image: -moz-linear-gradient(left, #eff0f0 0%, #99c 60%); /* Mozilla Firefox */ 
+    background-image: -o-linear-gradient(left, #eff0f0 0%, #99c 60%); /* Opera */ 
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #eff0f0), color-stop(0.6, #99c)); /* Webkit (Safari/Chrome 10) */ 
+    background-image: -webkit-linear-gradient(left, #eff0f0 0%, #99c 60%); /* Webkit (Chrome 11+) */ 
+    background-image: linear-gradient(to right, #eff0f0 0%, #99c 60%); /* W3C Markup, IE10 Release Preview */ 
+}
+
+.skillBlock .html5 {
+    text-align: left;
+    background-image: -ms-linear-gradient(right, #eff0f0 0%, #e34a22 60%); /* IE10 Consumer Preview */ 
+    background-image: -moz-linear-gradient(right, #eff0f0 0%, #e34a22 60%); /* Mozilla Firefox */ 
+    background-image: -o-linear-gradient(right, #eff0f0 0%, #e34a22 60%); /* Opera */ 
+    background-image: -webkit-gradient(linear, right top, left top, color-stop(0, #eff0f0), color-stop(0.6, #e34a22)); /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-linear-gradient(right, #eff0f0 0%, #e34a22 60%); /* Webkit (Chrome 11+) */ 
+    background-image: linear-gradient(to left, #eff0f0 0%, #e34a22 60%); /* W3C Markup, IE10 Release Preview */ 
+}
+
+.skillBlock .jquery {
+    text-align: right;
+    background-image: -ms-linear-gradient(left, #eff0f0 0%, #0769AD 60%); /* IE10 Consumer Preview */ 
+    background-image: -moz-linear-gradient(left, #eff0f0 0%, #0769AD 60%); /* Mozilla Firefox */ 
+    background-image: -o-linear-gradient(left, #eff0f0 0%, #0769AD 60%); /* Opera */ 
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #eff0f0), color-stop(0.6, #0769AD)); /* Webkit (Safari/Chrome 10) */ 
+    background-image: -webkit-linear-gradient(left, #eff0f0 0%, #0769AD 60%); /* Webkit (Chrome 11+) */ 
+    background-image: linear-gradient(to right, #eff0f0 0%, #0769AD 60%); /* W3C Markup, IE10 Release Preview */
+}
+
+.skillBlock .css3 {
+    text-align: left;
+    background-image: -ms-linear-gradient(right, #eff0f0 0%, #8AC007 60%); /* IE10 Consumer Preview */ 
+    background-image: -moz-linear-gradient(right, #eff0f0 0%, #8AC007 60%); /* Mozilla Firefox */ 
+    background-image: -o-linear-gradient(right, #eff0f0 0%, #8AC007 60%); /* Opera */ 
+    background-image: -webkit-gradient(linear, right top, left top, color-stop(0, #eff0f0), color-stop(0.6, #8AC007)); /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-linear-gradient(right, #eff0f0 0%, #8AC007 60%); /* Webkit (Chrome 11+) */ 
+    background-image: linear-gradient(to left, #eff0f0 0%, #8AC007 60%); /* W3C Markup, IE10 Release Preview */ 
+ }
+
+.skillBlock .mysql {
+    text-align: right;
+    background-image: -ms-linear-gradient(left, #eff0f0 0%, #e97b00 60%); /* IE10 Consumer Preview */ 
+    background-image: -moz-linear-gradient(left, #eff0f0 0%, #e97b00 60%); /* Mozilla Firefox */ 
+    background-image: -o-linear-gradient(left, #eff0f0 0%, #e97b00 60%); /* Opera */ 
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #eff0f0), color-stop(0.6, #e97b00)); /* Webkit (Safari/Chrome 10) */ 
+    background-image: -webkit-linear-gradient(left, #eff0f0 0%, #e97b00 60%); /* Webkit (Chrome 11+) */ 
+    background-image: linear-gradient(to right, #eff0f0 0%, #e97b00 60%); /* W3C Markup, IE10 Release Preview */ 
+}
+
+.skillBlock .csharp {
+    text-align: left;
+    background-image: -ms-linear-gradient(right, #eff0f0 0%, #68217a 60%); /* IE10 Consumer Preview */ 
+    background-image: -moz-linear-gradient(right, #eff0f0 0%, #68217a 60%); /* Mozilla Firefox */ 
+    background-image: -o-linear-gradient(right, #eff0f0 0%, #68217a 60%); /* Opera */ 
+    background-image: -webkit-gradient(linear, right top, left top, color-stop(0, #eff0f0), color-stop(0.6, #68217a)); /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-linear-gradient(right, #eff0f0 0%, #68217a 60%); /* Webkit (Chrome 11+) */ 
+    background-image: linear-gradient(to left, #eff0f0 0%, #68217a 60%); /* W3C Markup, IE10 Release Preview */ 
+}
+
+.skillBlock .java {
+    text-align: right;
+    background-image: -ms-linear-gradient(left, #eff0f0 0%, #DE0000 60%); /* IE10 Consumer Preview */ 
+    background-image: -moz-linear-gradient(left, #eff0f0 0%, #DE0000 60%); /* Mozilla Firefox */ 
+    background-image: -o-linear-gradient(left, #eff0f0 0%, #DE0000 60%); /* Opera */ 
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #eff0f0), color-stop(0.6, #DE0000)); /* Webkit (Safari/Chrome 10) */ 
+    background-image: -webkit-linear-gradient(left, #eff0f0 0%, #DE0000 60%); /* Webkit (Chrome 11+) */ 
+    background-image: linear-gradient(to right, #eff0f0 0%, #DE0000 60%); /* W3C Markup, IE10 Release Preview */ 
+
+}
+
+.skillBlock .c {
+    text-align: left;
+    background-image: -ms-linear-gradient(right, #eff0f0 0%, #99C0FF 60%); /* IE10 Consumer Preview */ 
+    background-image: -moz-linear-gradient(right, #eff0f0 0%, #99C0FF 60%); /* Mozilla Firefox */ 
+    background-image: -o-linear-gradient(right, #eff0f0 0%, #99C0FF 60%); /* Opera */ 
+    background-image: -webkit-gradient(linear, right top, left top, color-stop(0, #eff0f0), color-stop(0.6, #99C0FF)); /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-linear-gradient(right, #eff0f0 0%, #99C0FF 60%); /* Webkit (Chrome 11+) */ 
+    background-image: linear-gradient(to left, #eff0f0 0%, #99C0FF 60%); /* W3C Markup, IE10 Release Preview */ 
+}
+
+.skillFont {
+    color: #fff;
+    font-family:'infinityFont';
+    font-size: 180%;
+}
+
+.timelineCol {
+    padding-right: 0px;
+}
+
+.spacer {
+    margin-top: 80px; /* define margin as you see fit */
+}
+
+ul,li { 
+    color: #303c56;
+    list-style-type: none;
+    list-style-position:inside;
+    margin:0;
+    padding: 0;
+    padding-bottom:10px; 
+    font-family: Lucida Sans Unicode;
+    font-size: 90%;
+}
+
+/**
+** Social Media Icons
+**/
+.icons {
+    text-align: center;
+}
+
+.icons a {
+    display: inline-block;
+    height: 64px;
+    width: 64px;
+    background-size: 64px 64px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 15px;
+    text-indent: -9999em;
+    background-color: #1c2638;
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(50, 50, 50, 0.64);
+    -moz-box-shadow:    5px 5px 10px 0px rgba(50, 50, 50, 0.64);
+    box-shadow:         5px 5px 10px 0px rgba(50, 50, 50, 0.64);
+}
+
+/**
+** Footer 
+**/
+.footerbar {
+    width: 100%;
+    background-color: #303c56;
+    height: 500px;
+    text-align: center;
+}
+
+.footertext {
+    text-align: center;
+    font-family: 'infinityFont';
+    font-size: 400%;
+    color: #ffffff;
+    padding-top: 120px;
+}
+
+.footeremail {
+    text-align: center;
+    font-family: 'Lucida Sans Unicode';
+    padding-top: 20px;
+    font-size: 350%;
+    color: #cc9035;
+}
+
+.footerimg {
+    margin-top: 40px;
+}
+
+a:hover { 
+    color: #c4c4c3;
+    text-decoration: none;
+}
+
+.copyright {
+    position: relative;
+    float: right;
+    bottom: 0;
+    color: #c4c4c3;
+    padding-top: 50px;
+    padding-right: 20px;
+}
+
+
+
+/**
+** Responsive Classes
+**/
+@media (max-width: 1200px) {
+    
+    .jumbotron .bannertext h1.title {
+        font-size: 80px;
+    }
+    .spacer {
+        margin-top: 0; /* define margin as you see fit */
+    }
+    
+    .visible-desktop {
+        display: none;
+     }
+     
+    .quotebgn {
+        background-size: cover;
+    }
+    
+    .jumbotron .quotetext p {
+        font-size: 120%;
+    }
+
+}
+
+@media (max-width: 620px) {
+    .jumbotron .bannertext h1.title {
+        font-size: 50px;
+    }
+    .icons a {
+        height: 40px;
+        width: 40px;
+        background-size: 40px 40px;
+        margin: 7px;
+        margin-bottom: 30px;
+    }
+    
+    .jumbotron .bannertext .subtext {
+        color: #cc9035;
+        font-family: Lucida Sans Unicode;
+        font-size: 80%;
+    }
+    
+    .quotebgn {
+        display: none;
+    }
+    
+    .abouttext {
+        font-size: 80%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
