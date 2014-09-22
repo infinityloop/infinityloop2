@@ -127,16 +127,29 @@
     font-size: 48px;
 }
 
+<<<<<<< HEAD
 #projects{
     min-height:450px;
 }
 
 
+=======
+.projectsquare {
+    background-size: cover;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+>>>>>>> 914c132d2c9bdab46e815ced9ac388835a41d6f2
 .skillBlock {
     height: 70px;
     display: none;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 914c132d2c9bdab46e815ced9ac388835a41d6f2
 .skillBlock .php {
     text-align: right;
     background-image: -ms-linear-gradient(left, #eff0f0 0%, #99c 60%); /* IE10 Consumer Preview */ 

@@ -11,7 +11,11 @@ $vertical: false;
 // Colours
 $bg: #eff0f0;
 $blue: #303c56;
+<<<<<<< HEAD
 $innerCircle: #cc9035;
+=======
+$red: #f98262;
+>>>>>>> 914c132d2c9bdab46e815ced9ac388835a41d6f2
 
 body {
   @if $vertical {
@@ -40,7 +44,11 @@ body {
     padding: 0;
     border-top: 8px solid $blue;
     display: table;
+<<<<<<< HEAD
     border-spacing: 20px 0;
+=======
+    border-spacing: 30px 0;
+>>>>>>> 914c132d2c9bdab46e815ced9ac388835a41d6f2
   }
   li {
     @if $vertical {
@@ -55,6 +63,7 @@ body {
       }
     }
   }
+<<<<<<< HEAD
 }
 
 .timeline-logo{
@@ -65,6 +74,14 @@ body {
 }
 
 .timeline-date {
+=======
+  p {
+    margin: 0 0 15px;
+  }
+}
+
+.date {
+>>>>>>> 914c132d2c9bdab46e815ced9ac388835a41d6f2
   @if $vertical {
     margin-top: -10px;
     top: 50%;
@@ -93,8 +110,13 @@ body {
     left: 0;
     right: 0;
   }
+<<<<<<< HEAD
   width: 20px;
   height: 20px;
+=======
+  width: 10px;
+  height: 10px;
+>>>>>>> 914c132d2c9bdab46e815ced9ac388835a41d6f2
   background: $bg;
   border: 5px solid $blue;
   border-radius: 50%;
@@ -187,6 +209,7 @@ label {
     text-overflow: ellipsis;
     overflow: hidden;
     display: block;
+<<<<<<< HEAD
     top: 42px;
     left: 2px;
   }
@@ -197,6 +220,18 @@ label {
 }
 
 .timeline-radio:checked {
+=======
+    top: 60px;
+    left: 15px;
+  }
+}
+
+.radio {
+  display: none;
+}
+
+.radio:checked {
+>>>>>>> 914c132d2c9bdab46e815ced9ac388835a41d6f2
   & + .relative {
     label {
       cursor: auto;
@@ -209,11 +244,19 @@ label {
       }
     }
     .circle {
+<<<<<<< HEAD
       background: $innerCircle;
     }
   }
   & ~ .content {
     max-height: 400px;
+=======
+      background: $red;
+    }
+  }
+  & ~ .content {
+    max-height: 180px;
+>>>>>>> 914c132d2c9bdab46e815ced9ac388835a41d6f2
     border-color: $blue;
     @if $vertical {
       margin-right: 20px;
@@ -225,7 +268,10 @@ label {
     }
     p {
       max-height: 200px;
+<<<<<<< HEAD
       margin: 0;
+=======
+>>>>>>> 914c132d2c9bdab46e815ced9ac388835a41d6f2
       color: $blue;
       transition: color 0.3s linear 0.3s;
     }
