@@ -14,8 +14,8 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <style>
             body {
-                padding-top: 100px;
-                padding-bottom: 20px;
+                padding-top:100px;
+                padding-bottom: 50px;
                 background-color: #eff0f0;
             }
         </style>
@@ -29,352 +29,343 @@
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
-   <!-- <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Project name</a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>-->
-
-        <div class="jumbotron bluebgn" style="background: url('img/banner.png'); height: 400px">
-            <div class="container">
-                <div class="bannertext">
-                    <h1 class="title">Kelvin Lau</h1>
-                    <p class = "subtext">kelvin@infinityloop.ca</p>
+        <section id="topBanner-section">
+            <div class="jumbotron bluebgn" 
+                 style="background: url('img/banner.png'); height: 400px"
+                 data-center="background-position: 50% 0px;"
+                 data-top-bottom="background-position: 50% -150px;"
+                 data-anchor-target="#topBanner-section">
+                <div class="container">
+                    <div class="bannertext"
+                        data-center="opacity: 1"
+                        data-0-top="opacity: 0"
+                        data-anchor-target="#topBanner-section h1">
+                        <h1 class="title">Kelvin Lau</h1>
+                        <p class = "subtext">kelvin@infinityloop.ca</p>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="container spacer">
-            <!-- Example row of columns -->
-            <div class="row">
-                <div class="col-lg-4 greyfont">
-                    <h2>Developer</h2>
-                    <ul>
-                        <li>LAMP Stack (Linux, Apache, MySQL, PHP)</li>
-                        <li>HTML5, Javascript(JQuery, ExtJs), CSS3</li>
-                        <li>C, ASP.Net C#, Java, Android</li>
-                    </ul>
-                    <!--<p><a class="btn btn-default" href="#">See my projects &raquo;</a></p>-->
-                </div>
-                <div class="col-lg-4 greyfont">
-                    <h2>Photographer</h2>
-                    <ul>
-                        <li>Portraits, Landscapes, Events</li>
-                        <li>DSLR, Micro 4/3, Android Phone</li>
-                        <li>Available for events</li>
-                    </ul>
-                    <!--<p><a class="btn btn-default" href="#">Visit my gallery &raquo;</a></p>-->
-                </div>
-                <div class="col-lg-4 greyfont">
-                    <h2>Martial Artist</h2>
-                    <ul>
-                        <li>Musō Jikiden Eishin-ryū Iaido 1st Kyu (JCCC Mu Mon Kai, University of Guelph Sei Do Kai)</li>
-                        <li>Brazillian Jiu Jitsu White Belt (OpenMat Toronto)</li>
-                    </ul>
-                </div>
-            </div>
-        </div> <!-- /container -->
-
-        <div class="container spacer">    
-            <div class="row">
-                <div class="icons">
-                    <a href="http://www.facebook.com/kelvinlooplau" target="_blank" class="img-rounded" title="Facebook" style="background-image: url('img/icons/facebook.png');"></a>
-                    <a href="http://twitter.com/loopcow"class="img-rounded" target="_blank" title="Twitter" style="background-image: url('img/icons/twitter.png');"></a>
-                    <a href="http://www.gplus.to/kelvinlau" class="img-rounded" target="_blank" title="Google+" style="background-image: url('img/icons/googleplus.png');"></a>
-                    <a href="https://github.com/infinityloop/"class="img-rounded" target="_blank" title="GitHub" style="background-image: url('img/icons/github.png');"></a>
-                    <a href="http://ca.linkedin.com/in/laukelvin"class="img-rounded" target="_blank" title="LinkedIn" style="background-image: url('img/icons/linkedin.png');"></a>
-                    <a href="mailto:Kelvin@infinityloop.ca"class="img-rounded" title="Email" style="background-image: url('img/icons/email.png');"
-                        onclick="sendGmail();" rel="noreferrer"></a>
+        </section>
+        <section id="summary-section">
+            <div class="container spacer">
+                <!-- Example row of columns -->
+                <div class="row">
+                    <div class="col-lg-4 greyfont">
+                        <h2>Developer</h2>
+                        <ul>
+                            <li>LAMP Stack (Linux, Apache, MySQL, PHP)</li>
+                            <li>HTML5, Javascript(JQuery, ExtJs), CSS3</li>
+                            <li>C, ASP.Net C#, Java, Android</li>
+                        </ul>
+                        <!--<p><a class="btn btn-default" href="#">See my projects &raquo;</a></p>-->
+                    </div>
+                    <div class="col-lg-4 greyfont">
+                        <h2>Photographer</h2>
+                        <ul>
+                            <li>Portraits, Landscapes, Events</li>
+                            <li>DSLR, Micro 4/3</li>
+                            <li>Available for events</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 greyfont">
+                        <h2>Martial Artist</h2>
+                        <ul>
+                            <li>Musō Jikiden Eishin-ryū Iaido 1st Kyu (JCCC Mu Mon Kai, University of Guelph Sei Do Kai)</li>
+                            <li>Brazillian Jiu Jitsu White Belt (OpenMat Toronto)</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="container spacer">
-            <div class="row">
-                <div class="col-lg-3">
-                    <img src="img/klau2.png" height="330px" class="img-rounded visible-desktop" style="background-color: #c4c4c3;"></img>
-                </div>
-                <div class="col-lg-9 greyfont">
-                    <h2 class="sectionheader">My story so far...</h2>
-                    <p class="bluefont justified abouttext">Toronto based software developer, photographer, and martial artist who love all things technological whether it is the latest javascript library or the next-gen camera sensor. 
-                                                  I take pride in shipping high functioning maintainable code in a product that is exactly what you wanted. Creative problem solving designed for people who just want it to work.</p>
-                     <p class="bluefont justified abouttext">Whether it is to find the exact right angle of flattering light or just freeze the perfect moment that the world has gifted us, the only question is: digital, or film? </p>
-                     <p class="bluefont justified abouttext">I strive for perfection in my Iaido Kata's. I train to be an undefeatable Jiujiteiro. Always learning. </p>
+        </section>
+        <section id="socialMedia-section">
+            <div class="container spacer">    
+                <div class="row">
+                    <div class="icons">
+                        <a href="http://www.facebook.com/kelvinlooplau" target="_blank" class="img-rounded" title="Facebook" style="background-image: url('img/icons/facebook.png');"></a>
+                        <a href="http://twitter.com/loopcow"class="img-rounded" target="_blank" title="Twitter" style="background-image: url('img/icons/twitter.png');"></a>
+                        <a href="http://www.gplus.to/kelvinlau" class="img-rounded" target="_blank" title="Google+" style="background-image: url('img/icons/googleplus.png');"></a>
+                        <a href="https://github.com/infinityloop/"class="img-rounded" target="_blank" title="GitHub" style="background-image: url('img/icons/github.png');"></a>
+                        <a href="http://ca.linkedin.com/in/laukelvin"class="img-rounded" target="_blank" title="LinkedIn" style="background-image: url('img/icons/linkedin.png');"></a>
+                        <a href="mailto:Kelvin@infinityloop.ca"class="img-rounded" title="Email" style="background-image: url('img/icons/email.png');"
+                            onclick="sendGmail();" rel="noreferrer"></a>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div id="quote1" class="jumbotron quotebgn visible-desktop" style="background-image: url('img/ferriswheel.jpg');">
+        </section>
+        <section id="aboutMe-section">
             <div class="container spacer">
                 <div class="row">
-                    <div id="quote1container" class="quotecontainer">
-                        <span id="quote1text" class="quotetext"></span> <br/> <span id="quote1author" class="quoteauthor"></span> 
+                    <div class="col-lg-3">
+                        <img src="img/klau2.png" height="330px" class="img-rounded visible-desktop" style="background-color: #c4c4c3;"></img>
+                    </div>
+                    <div class="col-lg-9 greyfont">
+                        <h2 class="sectionheader">My story so far...</h2>
+                        <p class="bluefont justified abouttext">Toronto based software developer, photographer, and martial artist who love all things technological whether it is the latest javascript library or the next-gen camera sensor. 
+                                                      I take pride in shipping high functioning maintainable code in a product that is exactly what you wanted. Creative problem solving designed for people who just want it to work.</p>
+                         <p class="bluefont justified abouttext">Whether it is to find the exact right angle of flattering light or just freeze the perfect moment that the world has gifted us, the only question is: digital, or film? </p>
+                         <p class="bluefont justified abouttext">I strive for perfection in my Iaido Kata's. I train to be an undefeatable Jiujiteiro. Always learning. </p>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div id="projects" class="container spacer visible-desktop">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="sectionheader greyfont">Professional Experience</h1>
-                </div>
-            </div>
-            <div class="row ">
-                <div class="col-lg-12 container">
-                    <ul id="timeline">
-                        <li class='work'>
-                            <input class='timeline-radio' id='work1' name='works' type='radio'>
-                            <div class="relative">
-                              <label for='work1'><div class="timeline-logo" style="background:url('img/projects/uog.png') no-repeat center;" ></div></label>
-                              <span class='timeline-date'>September 2007<br>to April 2012</span>
-                              <span class='circle'></span>
-                            </div>
-                            <div class='content'>
-                            <br><br>
-                              <p>
-                                Kelvin enrolled into University of Guelph as a political science major but soon found that he could never quite shake the passion for computers and technology.
-                                <br><br>
-                                In addition to his academic studies, he also participated as an executive member of the computer science club, a board member of the College of Physical and Engineering Science, and a board representative for the college on the Central Student Association.
-                                <br><br>
-                                Kelvin graduated with honors in Bachelor of Computing, with a minor in Business Administration.
-                              </p>
-                            </div>
-                        </li>
-                        <li class='work'>
-                            <input class='timeline-radio' id='work2' name='works' type='radio'>
-                            <div class="relative">
-                              <label for='work2'><div class="timeline-logo" style="background:url('img/projects/riot.png') no-repeat center;" ></div></label>
-                              <span class='timeline-date'>April 2012<br>to July 2012</span>
-                              <span class='circle'></span>
-                            </div>
-                            <div class='content'>
-                            <br><br>
-                              <p>
-                                As an avid gamer and a player of the popular online multiplayer game "League of Legends", Kelvin was recruited upon graduation as an assistant producer and scrum master for the Los Angelos based company Riot Games.
-                                <br><br>
-                                During this time, he learnt agile development concepts and best in class development practices from one of the leading experts in the field of online gaming.
-                              </p>
-                            </div>
-                        </li>
-                        <li class='work'>
-                            <input class='timeline-radio' id='work3' name='works' type='radio'>
-                            <div class="relative">
-                              <label for='work3'><div class="timeline-logo" style="background:url('img/projects/metavera.png') no-repeat center;" ></div></label>
-                              <span class='timeline-date'>October 2012<br>to March 2014</span>
-                              <span class='circle'></span>
-                            </div>
-                            <div class='content'>
-                            <br><br>
-                              <p>
-                                Having experienced first hand the the development culture of Riot Games, Kelvin returned to Toronto to once again pursue his dream of being a world class software developer.
-                                <br><br>
-                                He applied his experiences in agile development with Metavera Solutions, an internationally renown software company in the emerging field of car sharing.
-                                <br><br>
-                                Despite having never developed for Software as a Service platforms, Kelvin went above and beyond to be charged with DealerFlow, a full-stack development project utilizing PHP, Javascript, and PostgreSql.
-                              </p>
-                            </div>
-                        </li>
-                        <li class='work'>
-                            <input class='timeline-radio' id='work4' name='works' type='radio'>
-                            <div class="relative">
-                              <label for='work4'><div class="timeline-logo" style="background:url('img/projects/achievers.png') no-repeat center;" ></div></label>
-                              <span class='timeline-date'>March 2014<br>to Current</span>
-                              <span class='circle'></span>
-                            </div>
-                            <div class='content'>
-                            <br><br>
-                              <p>
-                                Having completed the development for DealerFlow, Kelvin joined the Toronto employee engagement software company Achievers as a full stack software developer.
-                                <br><br>
-                                He is regularly recognized for his skills in applying the best concepts of agile web development while striving to expand his knowledge in software development.
-                                <br><br>
-                                After a short six months with Achievers, Kelvin was promoted to work within their more specialized mobile development team.
-                              </p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div id="skills" class="container spacer visible-desktop">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="sectionheader greyfont">Skills</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-5">
-                    <div id="skillsCanvas" style="height: 400px; width: 400px;">            
+        </section>
+        <section id="quote1-section">
+            <div id="quote1" class="jumbotron quotebgn visible-desktop" style="background-image: url('img/ferriswheel.jpg');">
+                <div class="container spacer">
+                    <div class="row">
+                        <div id="quote1container" class="quotecontainer">
+                            <span id="quote1text" class="quotetext"></span> <br/> <span id="quote1author" class="quoteauthor"></span> 
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-7">
-                    <div class="container" style="margin-top: 40px;">
-                        <div class="row">
-                            <div class="col-lg-6 skillBlock">
-                                <div class="php">
-                                    <p class="skillFont">PHP<img class="inline-image" src="img/skills/php.png"></img></p>
-                                    
+            </div>
+        </section>
+        <section id="projects-section">
+            <div id="projects" class="container spacer visible-desktop">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="sectionheader greyfont">Professional Experience</h1>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-lg-12 container timeline-start">
+                        <ul id="timeline" class="timeline-ul">
+                            <li class='work'>
+                                <input class='timeline-radio' id='work1' name='works' type='radio'>
+                                <div class="relative">
+                                  <label for='work1'><div class="timeline-logo" style="background:url('img/projects/uog.png') no-repeat center;" ></div></label>
+                                  <span class='timeline-date'>September 2007<br>to April 2012</span>
+                                  <span class='circle'></span>
+                                </div>
+                                <div class='content'>
+                                <br><br>
+                                  <p>
+                                    Kelvin enrolled into University of Guelph as a political science major but soon found that he could never quite shake the passion for computers and technology.
+                                    <br><br>
+                                    In addition to his academic studies, he also participated as an executive member of the computer science club, a board member of the College of Physical and Engineering Science, and a board representative for the college on the Central Student Association.
+                                    <br><br>
+                                    Kelvin graduated with honors in Bachelor of Computing, with a minor in Business Administration.
+                                  </p>
+                                </div>
+                            </li>
+                            <li class='work'>
+                                <input class='timeline-radio' id='work2' name='works' type='radio'>
+                                <div class="relative">
+                                  <label for='work2'><div class="timeline-logo" style="background:url('img/projects/riot.png') no-repeat center;" ></div></label>
+                                  <span class='timeline-date'>April 2012<br>to July 2012</span>
+                                  <span class='circle'></span>
+                                </div>
+                                <div class='content'>
+                                <br><br>
+                                  <p>
+                                    As an avid gamer and a player of the popular online multiplayer game "League of Legends", Kelvin was recruited upon graduation as an assistant producer and scrum master for the Los Angelos based company Riot Games.
+                                    <br><br>
+                                    During this time, he learnt agile development concepts and best in class development practices from one of the leading experts in the field of online gaming.
+                                  </p>
+                                </div>
+                            </li>
+                            <li class='work'>
+                                <input class='timeline-radio' id='work3' name='works' type='radio'>
+                                <div class="relative">
+                                  <label for='work3'><div class="timeline-logo" style="background:url('img/projects/metavera.png') no-repeat center;" ></div></label>
+                                  <span class='timeline-date'>October 2012<br>to March 2014</span>
+                                  <span class='circle'></span>
+                                </div>
+                                <div class='content'>
+                                <br><br>
+                                  <p>
+                                    Having experienced first hand the the development culture of Riot Games, Kelvin returned to Toronto to once again pursue his dream of being a world class software developer.
+                                    <br><br>
+                                    He applied his experiences in agile development with Metavera Solutions, an internationally renown software company in the emerging field of car sharing.
+                                    <br><br>
+                                    Despite having never developed for Software as a Service platforms, Kelvin went above and beyond to be charged with DealerFlow, a full-stack development project utilizing PHP, Javascript, and PostgreSql.
+                                  </p>
+                                </div>
+                            </li>
+                            <li class='work'>
+                                <input class='timeline-radio' id='work4' name='works' type='radio'>
+                                <div class="relative">
+                                  <label for='work4'><div class="timeline-logo" style="background:url('img/projects/achievers.png') no-repeat center;" ></div></label>
+                                  <span class='timeline-date'>March 2014<br>to Current</span>
+                                  <span class='circle'></span>
+                                </div>
+                                <div class='content'>
+                                <br><br>
+                                  <p>
+                                    Having completed the development for DealerFlow, Kelvin joined the Toronto employee engagement software company Achievers as a full stack software developer.
+                                    <br><br>
+                                    He is regularly recognized for his skills in applying the best concepts of agile web development while striving to expand his knowledge in software development.
+                                    <br><br>
+                                    After a short six months with Achievers, Kelvin was promoted to work within their more specialized mobile development team.
+                                  </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills-section">
+            <div id="skills" class="container spacer visible-desktop">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="sectionheader greyfont">Skills</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div id="skillsCanvas" style="height: 400px; width: 400px;">            
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="container" style="margin-top: 40px;">
+                            <div class="row">
+                                <div class="col-lg-6 skillBlock">
+                                    <div class="php">
+                                        <p class="skillFont">PHP<img class="inline-image" src="img/skills/php.png"></img></p>
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 skillBlock">
+                                    <div class="html5">
+                                        <p class="skillFont"><img class="inline-image" src="img/skills/html5.png"></img>HTML 5</p>
+                                    </div>                       
                                 </div>
                             </div>
-                            <div class="col-lg-6 skillBlock">
-                                <div class="html5">
-                                    <p class="skillFont"><img class="inline-image" src="img/skills/html5.png"></img>HTML 5</p>
-                                </div>                       
+                            <div class="row">
+                                <div class="col-lg-6 skillBlock">
+                                    <div class="jquery">
+                                        <p class="skillFont">Javascript/jQuery<img class="inline-image" src="img/skills/jquery.png"></img></p>
+                                    </div>                        
+                                </div>
+                                <div class="col-lg-6 skillBlock">
+                                    <div class="css3">
+                                        <p class="skillFont"><img class="inline-image" src="img/skills/css3.png"></img>CSS 3</p>
+                                    </div> 
+                                </div>
                             </div>
+                            <div class="row">
+                                <div class="col-lg-6 skillBlock">
+                                    <div class="mysql">
+                                        <p class="skillFont">SQL<img class="inline-image" src="img/skills/mysql.png"></img></p>
+                                    </div> 
+                                </div>
+                                <div class="col-lg-6 skillBlock">
+                                    <div class="csharp">
+                                        <p class="skillFont"><img class="inline-image" src="img/skills/csharp.png"></img>ASP.Net C#</p>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 skillBlock">
+                                    <div class="java">
+                                        <p class="skillFont">Java<img class="inline-image" src="img/skills/java.png"></img></p>
+                                    </div> 
+                                </div>
+                                <div class="col-lg-6 skillBlock">
+                                    <div class="c">
+                                        <p class="skillFont"><img class="inline-image" src="img/skills/C.png"></img>C</p>
+                                    </div> 
+                                </div>
+                            </div>                    
                         </div>
-                        <div class="row">
-                            <div class="col-lg-6 skillBlock">
-                                <div class="jquery">
-                                    <p class="skillFont">Javascript/jQuery<img class="inline-image" src="img/skills/jquery.png"></img></p>
-                                </div>                        
-                            </div>
-                            <div class="col-lg-6 skillBlock">
-                                <div class="css3">
-                                    <p class="skillFont"><img class="inline-image" src="img/skills/css3.png"></img>CSS 3</p>
-                                </div> 
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-6 skillBlock">
-                                <div class="mysql">
-                                    <p class="skillFont">SQL<img class="inline-image" src="img/skills/mysql.png"></img></p>
-                                </div> 
-                            </div>
-                            <div class="col-lg-6 skillBlock">
-                                <div class="csharp">
-                                    <p class="skillFont"><img class="inline-image" src="img/skills/csharp.png"></img>ASP.Net C#</p>
-                                </div> 
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-6 skillBlock">
-                                <div class="java">
-                                    <p class="skillFont">Java<img class="inline-image" src="img/skills/java.png"></img></p>
-                                </div> 
-                            </div>
-                            <div class="col-lg-6 skillBlock">
-                                <div class="c">
-                                    <p class="skillFont"><img class="inline-image" src="img/skills/C.png"></img>C</p>
-                                </div> 
-                            </div>
-                        </div>                    
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div id="quote2" class="jumbotron quotebgn visible-desktop" style="background-image: url('img/daito.png');">
-            <div class="container spacer">
+        </section>
+        <section id="quote2-section">
+            <div id="quote2" class="jumbotron quotebgn visible-desktop" style="background-image: url('img/daito.png');">
+                <div class="container spacer">
+                    <div class="row">
+                        <div id="quote2container" class="quotecontainer">
+                            <span id="quote2text" class="quotetext"></span> <br/> <span id="quote2author" class="quoteauthor"></span> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="martialArts-section">
+            <div id="martialArts" class="container spacer visible-desktop">
                 <div class="row">
-                    <div id="quote2container" class="quotecontainer">
-                        <span id="quote2text" class="quotetext"></span> <br/> <span id="quote2author" class="quoteauthor"></span> 
+                    <div class="col-lg-12">
+                        <h1 class="sectionheader greyfont">Martial Arts</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div id="martialArtsLeftPanel" class="martialArtsPanel" style="background-image: url('img/bjj-sm.png'); height: 1000px; width: 386px;"></div>
+                    </div>
+                    <div class="col-lg-4 timelineCol">
+                        <ul class='timeline v2'>
+                            <li class="year first">2008</li>
+
+                            <li class='event right'>
+                                <p class="eventdate"> Nov<br/>13 </p>
+                                <p class="eventtext">Joined Sei Do Kai at University of Guelph. Began training Musō Jikiden Eishin-ryū iaido under Kim Taylor, 7th Dan Renshi</p>
+                            </li>
+                            <li class='event right'>
+                                <p class="eventdate">May<br/>10</p>
+                                <p class="eventtext">Purchased iaito.<br/> Jidai Koshirae 2.5 Shaku Zinc Aluminum</p>
+                            </li>
+
+                            <li class="year">2012</li>
+                            <li class="event right">
+                                <p class="eventdate">Apr<br/>16</p>
+                                <p class="eventtext">Graduated from University of Guelph.</p>
+                            </li>
+                            <li class="year">2013</li>
+                            <li class="event right">
+                                <p class="eventdate">Aug<br/>17</p>
+                                <p class="eventtext">Joined Mu Mon Kai, Japanese Canadian Cultural Center under Goyo Ohmi, 7th Dan Kyoshi</p>
+                            </li>
+                            <li class="event">
+                                <p class="eventdate">Nov<br/>4</p>
+                                <p class="eventtext">Joined OpenMat MMA. Began training Brazillian Jiu-Jitsu under Elliot Bayev, Black Belt</p>
+                            </li>
+                            <li class="event right">
+                                <p class="eventdate">Dec<br/>7</p>
+                                <p class="eventtext">Attained rank of Ikkyu</p>
+                            </li>
+                            <li class="year">2014</li>
+                            <li class="event">
+                                <p class="eventdate">Mar<br/>26</p>
+                                <p class="eventtext">Attained white belt,<br/>first stripe</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <div id="martialArtsLeftPanel" class="martialArtsPanel" style="background-image: url('img/iaido-sm.png'); height: 1000px; width: 386px;"></div>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div id="martialArts" class="container spacer visible-desktop">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="sectionheader greyfont">Martial Arts</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4">
-                    <div id="martialArtsLeftPanel" class="martialArtsPanel" style="background-image: url('img/bjj-sm.png'); height: 1000px; width: 386px;"></div>
-                </div>
-                <div class="col-lg-4 timelineCol">
-                    <ul class='timeline v2'>
-                        <li class="year first">2008</li>
-
-                        <li class='event  '>
-                            <p class="eventdate"> Nov<br/>13 </p>
-                            <p class="eventtext">Joined Sei Do Kai at University of Guelph. Began training Musō Jikiden Eishin-ryū iaido under Kim Taylor, 7th Dan Renshi</p>
-                        </li>
-                        <li class='event right'>
-                            <p class="eventdate">May<br/>10</p>
-                            <p class="eventtext">Purchased iaito.<br/> Jidai Koshirae 2.5 Shaku Zinc Aluminum</p>
-                        </li>
-
-                        <li class="year">2012</li>
-                        <li class="event right">
-                            <p class="eventdate">Apr<br/>16</p>
-                            <p class="eventtext">Graduated from University of Guelph.</p>
-                        </li>
-                        <li class="year">2013</li>
-                        <li class="event right">
-                            <p class="eventdate">Aug<br/>17</p>
-                            <p class="eventtext">Joined Mu Mon Kai, Japanese Canadian Cultural Center under Goyo Ohmi, 7th Dan Kyoshi</p>
-                        </li>
-                        <li class="event">
-                            <p class="eventdate">Nov<br/>4</p>
-                            <p class="eventtext">Joined OpenMat MMA. Began training Brazillian Jiu-Jitsu under Elliot Bayev, Black Belt</p>
-                        </li>
-                        <li class="event right">
-                            <p class="eventdate">Dec<br/>7</p>
-                            <p class="eventtext">Attained rank of Ikkyu</p>
-                        </li>
-                        <li class="year">2014</li>
-                        <li class="event">
-                            <p class="eventdate">Mar<br/>26</p>
-                            <p class="eventtext">Attained white belt,<br/>first stripe</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-4">
-                    <div id="martialArtsLeftPanel" class="martialArtsPanel" style="background-image: url('img/iaido-sm.png'); height: 1000px; width: 386px;"></div>
-                </div>
-            </div>
-        </div>
-
+        </section>
         <!-- END -->
         <hr>
-
-        <footer class="footerbar visible-desktop spacer" style="background: url('img/banner.png'); ">
-        <p class="footertext"> Thanks for dropping by! Questions?</p>
-        <a href="mailto:Kelvin@infinityloop.ca" class="footeremail" onClick="sendGmail();" rel="noreferrer">kelvin@infinityloop.ca</a> <br/>
-        <img src="img/infinity.png" class="footerimg" height="48px" width="104px"></img>
-        </footer>
+        <section id="footer-Section">
+            <footer class="footerbar visible-desktop spacer" 
+                    style="background: url('img/banner.png'); background-position: 50%;"
+                    data-200-bottom="background-position: 50% 0px;"
+                    data-bottom="background-position: 50% -200px;"
+                    data-anchor-target="#footer-Section">
+            <div class="footerText-container"
+                 data-100-bottom="opacity: 0;"
+                 data-bottom="opacity: 1;"
+                 data-anchor-target="#footer-Section">
+                <p class="footertext"> Thanks for dropping by! Questions?</p>
+                <a href="mailto:Kelvin@infinityloop.ca" class="footeremail" onClick="sendGmail();" rel="noreferrer">kelvin@infinityloop.ca</a> <br/>
+                <img src="img/infinity.png" class="footerimg" height="48px" width="104px"></img>
+            </div>
+            </footer>
+        </section>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
-
-        <script src="js/main.js"></script>
+        <script src="js/skrollr.js"></script>
         <script src="js/smooth-scroll.js"></script>
-        <script src="js/isotope-min.js"></script>
+<!--        <script src="js/isotope-min.js"></script>-->
         <script src="js/raphael.js"></script>
+        <script src="js/main.js"></script>
+
         <!--<script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];

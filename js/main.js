@@ -1,7 +1,27 @@
- var showSkills = true;
- var fadeSpeed = 400;
- var quote1Timer ;
- var quote2Timer;
+var showSkills = true;
+var openProjects = true;
+var fadeSpeed = 400;
+var quote1Timer;
+var quote2Timer;
+var lastTechQuoteIndex = 0;
+var lastMAQuoteIndex = 0;
+var techQuoteArray = new Array();
+var MAQuoteArray = new Array();
+
+
+( function( $ ) {
+    // Init Skrollr
+    var s = skrollr.init({
+        render: function(data) {
+            //Debugging - Log the current scroll position.
+            console.log(data.curTop);
+        }
+
+    });
+} )( jQuery );
+
+prepareQuotes();
+
  // Scroll Listener
 $(window).scroll(function() {
         
@@ -37,6 +57,11 @@ $(window).scroll(function() {
         $('#quote2author').fadeOut(fadeSpeed);
     }
     
+    if(atActivationPoint($('.timeline-start')) && openProjects == true) {
+        $('#timeline > li:first> :radio').prop('checked', true);
+        openProjects = false;
+    }
+
     if(atActivationPoint($('#skills')) && showSkills == true) {
         activateSkills();
         showSkills = false;
@@ -63,6 +88,22 @@ function cycleQuote(quoteId, type) {
         }
 }
 
+function prepareQuotes(){
+
+    MAQuoteArray.push(createQuoteObject("Think lightly of yourself and deeply of the world.", "Miyamoto Musashi"));
+    MAQuoteArray.push(createQuoteObject("Learning jiu-jitsu is something for the subconscious, not for the consciousness.", "Helios Gracie"));    
+    MAQuoteArray.push(createQuoteObject("Empty your mind, be formless. Shapeless... Be water, my friend." , "Bruce Lee"));
+    MAQuoteArray.push(createQuoteObject("We learn martial arts as helping weakness. You never fight for people to get hurt. You're always helping people." , "Jackie Chan"));
+    MAQuoteArray.push(createQuoteObject("The supreme art of war is to subdue the enemy without fighting." , "Sun Tzu"));
+
+    techQuoteArray.push(createQuoteObject("Any sufficiently advanced technology is indistinguishable from magic.", "Arthur C. Clarke"));
+    techQuoteArray.push(createQuoteObject("It's still magic even if you know how it's done.", "Terry Pratchett"));    
+    techQuoteArray.push(createQuoteObject("I learned not to worry so much about the outcome, but to concentrate on the step I was on and to try to do it as perfectly as I could when I was doing it." , "Steve Wozniak"));
+    techQuoteArray.push(createQuoteObject("Everyday life is like programming, I guess. If you love something you can put beauty into it." , "Donald Knuth"));
+    techQuoteArray.push(createQuoteObject("Intelligence is the ability to avoid doing work, yet getting the work done. " , "Linus Torvald"));
+
+}
+
 function displayQuote(quoteId, quote) {
     $('#'+quoteId + 'text').text('"' + quote.quote + '" ');
     $('#'+quoteId + 'author').text('  - ' + quote.author + '  ');
@@ -73,31 +114,15 @@ function displayQuote(quoteId, quote) {
 }
 
 function getTechQuote() {
-
-    var TechquoteArray = new Array();
-
-    TechquoteArray.push(createQuoteObject("Any sufficiently advanced technology is indistinguishable from magic.", "Arthur C. Clarke"));
-    TechquoteArray.push(createQuoteObject("It's still magic even if you know how it's done.", "Terry Pratchett"));    
-    TechquoteArray.push(createQuoteObject("I learned not to worry so much about the outcome, but to concentrate on the step I was on and to try to do it as perfectly as I could when I was doing it." , "Steve Wozniak"));
-    TechquoteArray.push(createQuoteObject("Everyday life is like programming, I guess. If you love something you can put beauty into it." , "Donald Knuth"));
-    TechquoteArray.push(createQuoteObject("Intelligence is the ability to avoid doing work, yet getting the work done. " , "Linus Torvald"));
-
-    randomReturn = randomIntFromInterval(0, TechquoteArray.length);
-    return TechquoteArray[randomReturn];
+    var currentIndex = lastTechQuoteIndex;
+    lastTechQuoteIndex = (lastTechQuoteIndex + 1) % techQuoteArray.length; 
+    return techQuoteArray[currentIndex];
 }
 
 function getMAQuote() {
-
-    var MAquoteArray = new Array();
-
-    MAquoteArray.push(createQuoteObject("Think lightly of yourself and deeply of the world.", "Miyamoto Musashi"));
-    MAquoteArray.push(createQuoteObject("Learning jiu-jitsu is something for the subconscious, not for the consciousness.", "Helios Gracie"));    
-    MAquoteArray.push(createQuoteObject("Empty your mind, be formless. Shapeless, like water. If you put water into a cup, it becomes the cup. You put water into a bottle and it becomes the bottle. Be water, my friend." , "Bruce Lee"));
-    MAquoteArray.push(createQuoteObject("We learn martial arts as helping weakness. You never fight for people to get hurt. You're always helping people." , "Jackie Chan"));
-    MAquoteArray.push(createQuoteObject("The supreme art of war is to subdue the enemy without fighting." , "Sun Tzu"));
-
-    randomReturn = randomIntFromInterval(0, MAquoteArray.length);
-    return MAquoteArray[randomReturn];
+    var currentIndex = lastMAQuoteIndex;
+    lastMAQuoteIndex = (lastMAQuoteIndex + 1) % MAQuoteArray.length; 
+    return MAQuoteArray[currentIndex];
 }
 
 
@@ -122,9 +147,13 @@ function randomIntFromInterval(min,max)
     return num;
 }
 
-function atActivationPoint($item) {
-    var offset = $(window).height()/ 2.5;
-    return (($item.position().top - ($(document).scrollTop() + offset)) <= 0)
+function atActivationPoint($item, $offset) {
+    if(typeof offset == 'undefined') {
+        offset = 0;
+    }
+    var centerpoint = $(window).height()/ 2.5;
+    var adjustment = centerpoint + offset;
+    return (($item.position().top - ($(document).scrollTop() + adjustment)) <= 0)
 }
 
 function activateSkills() {
