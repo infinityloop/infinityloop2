@@ -154,166 +154,44 @@
 }
 
 /* line 139, ../sass/main.scss */
-.skillBlock {
-  height: 70px;
+.skillText {
   display: none;
+  margin-top: 50px;
 }
 
 /* line 144, ../sass/main.scss */
-.skillBlock .php {
-  text-align: right;
-  background-image: -ms-linear-gradient(left, #eff0f0 0%, #99c 60%);
-  /* IE10 Consumer Preview */
-  background-image: -moz-linear-gradient(left, #eff0f0 0%, #99c 60%);
-  /* Mozilla Firefox */
-  background-image: -o-linear-gradient(left, #eff0f0 0%, #99c 60%);
-  /* Opera */
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #eff0f0), color-stop(0.6, #99c));
-  /* Webkit (Safari/Chrome 10) */
-  background-image: -webkit-linear-gradient(left, #eff0f0 0%, #99c 60%);
-  /* Webkit (Chrome 11+) */
-  background-image: linear-gradient(to right, #eff0f0 0%, #99c 60%);
-  /* W3C Markup, IE10 Release Preview */
+.skillExperienceText {
+  color: #7986A5;
+  font-size: 130%;
+  font-family: 'infinityFont';
 }
 
-/* line 154, ../sass/main.scss */
-.skillBlock .html5 {
-  text-align: left;
-  background-image: -ms-linear-gradient(right, #eff0f0 0%, #e34a22 60%);
-  /* IE10 Consumer Preview */
-  background-image: -moz-linear-gradient(right, #eff0f0 0%, #e34a22 60%);
-  /* Mozilla Firefox */
-  background-image: -o-linear-gradient(right, #eff0f0 0%, #e34a22 60%);
-  /* Opera */
-  background-image: -webkit-gradient(linear, right top, left top, color-stop(0, #eff0f0), color-stop(0.6, #e34a22));
-  /* Webkit (Safari/Chrome 10) */
-  background-image: -webkit-linear-gradient(right, #eff0f0 0%, #e34a22 60%);
-  /* Webkit (Chrome 11+) */
-  background-image: linear-gradient(to left, #eff0f0 0%, #e34a22 60%);
-  /* W3C Markup, IE10 Release Preview */
+/* line 150, ../sass/main.scss */
+.skillInterestText {
+  color: #fcb040;
+  font-size: 130%;
+  font-family: 'infinityFont';
 }
 
-/* line 164, ../sass/main.scss */
-.skillBlock .jquery {
-  text-align: right;
-  background-image: -ms-linear-gradient(left, #eff0f0 0%, #0769AD 60%);
-  /* IE10 Consumer Preview */
-  background-image: -moz-linear-gradient(left, #eff0f0 0%, #0769AD 60%);
-  /* Mozilla Firefox */
-  background-image: -o-linear-gradient(left, #eff0f0 0%, #0769AD 60%);
-  /* Opera */
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #eff0f0), color-stop(0.6, #0769AD));
-  /* Webkit (Safari/Chrome 10) */
-  background-image: -webkit-linear-gradient(left, #eff0f0 0%, #0769AD 60%);
-  /* Webkit (Chrome 11+) */
-  background-image: linear-gradient(to right, #eff0f0 0%, #0769AD 60%);
-  /* W3C Markup, IE10 Release Preview */
-}
-
-/* line 174, ../sass/main.scss */
-.skillBlock .css3 {
-  text-align: left;
-  background-image: -ms-linear-gradient(right, #eff0f0 0%, #8AC007 60%);
-  /* IE10 Consumer Preview */
-  background-image: -moz-linear-gradient(right, #eff0f0 0%, #8AC007 60%);
-  /* Mozilla Firefox */
-  background-image: -o-linear-gradient(right, #eff0f0 0%, #8AC007 60%);
-  /* Opera */
-  background-image: -webkit-gradient(linear, right top, left top, color-stop(0, #eff0f0), color-stop(0.6, #8AC007));
-  /* Webkit (Safari/Chrome 10) */
-  background-image: -webkit-linear-gradient(right, #eff0f0 0%, #8AC007 60%);
-  /* Webkit (Chrome 11+) */
-  background-image: linear-gradient(to left, #eff0f0 0%, #8AC007 60%);
-  /* W3C Markup, IE10 Release Preview */
-}
-
-/* line 184, ../sass/main.scss */
-.skillBlock .mysql {
-  text-align: right;
-  background-image: -ms-linear-gradient(left, #eff0f0 0%, #e97b00 60%);
-  /* IE10 Consumer Preview */
-  background-image: -moz-linear-gradient(left, #eff0f0 0%, #e97b00 60%);
-  /* Mozilla Firefox */
-  background-image: -o-linear-gradient(left, #eff0f0 0%, #e97b00 60%);
-  /* Opera */
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #eff0f0), color-stop(0.6, #e97b00));
-  /* Webkit (Safari/Chrome 10) */
-  background-image: -webkit-linear-gradient(left, #eff0f0 0%, #e97b00 60%);
-  /* Webkit (Chrome 11+) */
-  background-image: linear-gradient(to right, #eff0f0 0%, #e97b00 60%);
-  /* W3C Markup, IE10 Release Preview */
-}
-
-/* line 194, ../sass/main.scss */
-.skillBlock .csharp {
-  text-align: left;
-  background-image: -ms-linear-gradient(right, #eff0f0 0%, #68217a 60%);
-  /* IE10 Consumer Preview */
-  background-image: -moz-linear-gradient(right, #eff0f0 0%, #68217a 60%);
-  /* Mozilla Firefox */
-  background-image: -o-linear-gradient(right, #eff0f0 0%, #68217a 60%);
-  /* Opera */
-  background-image: -webkit-gradient(linear, right top, left top, color-stop(0, #eff0f0), color-stop(0.6, #68217a));
-  /* Webkit (Safari/Chrome 10) */
-  background-image: -webkit-linear-gradient(right, #eff0f0 0%, #68217a 60%);
-  /* Webkit (Chrome 11+) */
-  background-image: linear-gradient(to left, #eff0f0 0%, #68217a 60%);
-  /* W3C Markup, IE10 Release Preview */
-}
-
-/* line 204, ../sass/main.scss */
-.skillBlock .java {
-  text-align: right;
-  background-image: -ms-linear-gradient(left, #eff0f0 0%, #DE0000 60%);
-  /* IE10 Consumer Preview */
-  background-image: -moz-linear-gradient(left, #eff0f0 0%, #DE0000 60%);
-  /* Mozilla Firefox */
-  background-image: -o-linear-gradient(left, #eff0f0 0%, #DE0000 60%);
-  /* Opera */
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #eff0f0), color-stop(0.6, #DE0000));
-  /* Webkit (Safari/Chrome 10) */
-  background-image: -webkit-linear-gradient(left, #eff0f0 0%, #DE0000 60%);
-  /* Webkit (Chrome 11+) */
-  background-image: linear-gradient(to right, #eff0f0 0%, #DE0000 60%);
-  /* W3C Markup, IE10 Release Preview */
-}
-
-/* line 215, ../sass/main.scss */
-.skillBlock .c {
-  text-align: left;
-  background-image: -ms-linear-gradient(right, #eff0f0 0%, #99C0FF 60%);
-  /* IE10 Consumer Preview */
-  background-image: -moz-linear-gradient(right, #eff0f0 0%, #99C0FF 60%);
-  /* Mozilla Firefox */
-  background-image: -o-linear-gradient(right, #eff0f0 0%, #99C0FF 60%);
-  /* Opera */
-  background-image: -webkit-gradient(linear, right top, left top, color-stop(0, #eff0f0), color-stop(0.6, #99C0FF));
-  /* Webkit (Safari/Chrome 10) */
-  background-image: -webkit-linear-gradient(right, #eff0f0 0%, #99C0FF 60%);
-  /* Webkit (Chrome 11+) */
-  background-image: linear-gradient(to left, #eff0f0 0%, #99C0FF 60%);
-  /* W3C Markup, IE10 Release Preview */
-}
-
-/* line 225, ../sass/main.scss */
+/* line 156, ../sass/main.scss */
 .skillFont {
   color: #fff;
   font-family: 'infinityFont';
   font-size: 180%;
 }
 
-/* line 231, ../sass/main.scss */
+/* line 162, ../sass/main.scss */
 .timelineCol {
   padding-right: 0px;
 }
 
-/* line 235, ../sass/main.scss */
+/* line 166, ../sass/main.scss */
 .spacer {
   margin-top: 80px;
   /* define margin as you see fit */
 }
 
-/* line 239, ../sass/main.scss */
+/* line 170, ../sass/main.scss */
 ul, li {
   color: #303c56;
   list-style-type: none;
@@ -328,12 +206,12 @@ ul, li {
 /**
 ** Social Media Icons
 **/
-/* line 253, ../sass/main.scss */
+/* line 184, ../sass/main.scss */
 .icons {
   text-align: center;
 }
 
-/* line 257, ../sass/main.scss */
+/* line 188, ../sass/main.scss */
 .icons a {
   display: inline-block;
   height: 64px;
@@ -352,7 +230,7 @@ ul, li {
 /**
 ** Footer 
 **/
-/* line 275, ../sass/main.scss */
+/* line 206, ../sass/main.scss */
 .footerbar {
   width: 100%;
   background-color: #303c56;
@@ -361,7 +239,7 @@ ul, li {
   margin-bottom: 75px;
 }
 
-/* line 283, ../sass/main.scss */
+/* line 214, ../sass/main.scss */
 .footertext {
   text-align: center;
   font-family: 'infinityFont';
@@ -370,7 +248,7 @@ ul, li {
   padding-top: 120px;
 }
 
-/* line 291, ../sass/main.scss */
+/* line 222, ../sass/main.scss */
 .footeremail {
   text-align: center;
   font-family: 'Lucida Sans Unicode';
@@ -379,18 +257,18 @@ ul, li {
   color: #cc9035;
 }
 
-/* line 299, ../sass/main.scss */
+/* line 230, ../sass/main.scss */
 .footerimg {
   margin-top: 40px;
 }
 
-/* line 303, ../sass/main.scss */
+/* line 234, ../sass/main.scss */
 a:hover {
   color: #c4c4c3;
   text-decoration: none;
 }
 
-/* line 308, ../sass/main.scss */
+/* line 239, ../sass/main.scss */
 .copyright {
   position: relative;
   float: right;
@@ -404,7 +282,12 @@ a:hover {
 ** Responsive Classes
 **/
 @media (min-width: 1920px) {
-  /* line 323, ../sass/main.scss */
+  /* line 255, ../sass/main.scss */
+  body {
+    margin-top: 80px;
+  }
+
+  /* line 259, ../sass/main.scss */
   .jumbotron .bannertext {
     width: 100%;
     margin: 0 auto;
@@ -412,39 +295,39 @@ a:hover {
   }
 }
 @media (max-width: 1200px) {
-  /* line 333, ../sass/main.scss */
+  /* line 269, ../sass/main.scss */
   .jumbotron .bannertext h1.title {
     font-size: 80px;
   }
 
-  /* line 336, ../sass/main.scss */
+  /* line 272, ../sass/main.scss */
   .spacer {
     margin-top: 0;
     /* define margin as you see fit */
   }
 
-  /* line 340, ../sass/main.scss */
+  /* line 276, ../sass/main.scss */
   .visible-desktop {
     display: none;
   }
 
-  /* line 344, ../sass/main.scss */
+  /* line 280, ../sass/main.scss */
   .quotebgn {
     background-size: cover;
   }
 
-  /* line 348, ../sass/main.scss */
+  /* line 284, ../sass/main.scss */
   .jumbotron .quotetext p {
     font-size: 120%;
   }
 }
 @media (max-width: 620px) {
-  /* line 355, ../sass/main.scss */
+  /* line 291, ../sass/main.scss */
   .jumbotron .bannertext h1.title {
     font-size: 50px;
   }
 
-  /* line 358, ../sass/main.scss */
+  /* line 294, ../sass/main.scss */
   .icons a {
     height: 40px;
     width: 40px;
@@ -453,19 +336,19 @@ a:hover {
     margin-bottom: 30px;
   }
 
-  /* line 366, ../sass/main.scss */
+  /* line 302, ../sass/main.scss */
   .jumbotron .bannertext .subtext {
     color: #cc9035;
     font-family: Lucida Sans Unicode;
     font-size: 80%;
   }
 
-  /* line 372, ../sass/main.scss */
+  /* line 308, ../sass/main.scss */
   .quotebgn {
     display: none;
   }
 
-  /* line 376, ../sass/main.scss */
+  /* line 312, ../sass/main.scss */
   .abouttext {
     font-size: 80%;
   }

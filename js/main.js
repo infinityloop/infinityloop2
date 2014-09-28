@@ -157,122 +157,39 @@ function atActivationPoint($item, $offset) {
 }
 
 function activateSkills() {
-    // Raphael Skill Circle
-    var archtype = Raphael("skillsCanvas", 400, 400);
-    archtype.customAttributes.arc = function (xloc, yloc, value, total, R) {
-        var alpha = 360 / total * value,
-            a = (90 - alpha) * Math.PI / 180,
-            x = xloc + R * Math.cos(a),
-            y = yloc - R * Math.sin(a),
-            path;
-        if (total == value) {
-            path = [
-                ["M", xloc, yloc - R],
-                ["A", R, R, 0, 1, 1, xloc - 0.01, yloc - R]
-            ];
-        } else {
-            path = [
-                ["M", xloc, yloc - R],
-                ["A", R, R, 0, +(alpha > 180), 1, x, y]
-            ];
-        }
-        return {
-            path: path
-        };
+    var ctx = $("#skillsChart").get(0).getContext("2d");
+
+    var data = {
+    labels: ["PHP", "Javascript", "C#", "MySQL", "HTML5", "CSS3", "Java", "Objective-C", "C", "Android"],
+    datasets: [
+        {
+            label: "Interests",
+            fillColor: "rgba(253, 200, 121, 0.4",
+            strokeColor: "rgba(252, 176, 64, 0.4)",
+            pointColor: "rgba(252, 176, 64, 0.4)",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(151,187,205,1)",
+            data: [75, 90, 52, 40, 85, 85, 20, 90, 15, 75]
+        },
+        {
+            label: "Expertise",
+            fillColor: "rgba(134, 149, 183, 0.66)",
+            strokeColor: "rgba(66, 90, 143, 0.66)",
+            pointColor: "rgba(66, 90, 143, 0.66)",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(220,220,220,1)",
+            data: [95, 80, 24, 75, 70, 70, 20, 25, 20, 45]
+        }]
     };
-    
-    var php_arc;
-    var html_arc;
-    var jquery_arc;
-    var css_arc;
-    var sql_arc;
-    var csharp_arc;
-    var java_arc;
-    var c_arc;
-    
-    //make an arc at 200,200 with a radius of 30 that grows from 0 to X of 100 with a linear
-    php_arc = archtype.path().attr({       
-        "stroke": "#99c",
-        "stroke-width": 16,
-        arc: [200, 200, 0, 100, 30]
+
+    var myRadarChart = new Chart(ctx).Radar(data, {
+        showTooltips: false,
+        pointDot: false
     });
 
-    html_arc = archtype.path().attr({
-        "stroke": "#e34a22",
-        "stroke-width": 16,
-        arc: [200, 200, 0, 100, 20]
-    });
-    
-    jquery_arc = archtype.path().attr({
-        "stroke": "#0769AD",
-        "stroke-width": 16,
-        arc: [200, 200, 0, 100, 20]
-    });
-    
-    css_arc = archtype.path().attr({
-        "stroke": "#8AC007",
-        "stroke-width": 16,
-        arc: [200, 200, 0, 100, 20]
-    });
-    
-    sql_arc = archtype.path().attr({
-        "stroke": "#e97b00",
-        "stroke-width": 16,
-        arc: [200, 200, 0, 100, 20]
-    });
-    
-    csharp_arc = archtype.path().attr({
-        "stroke": "#68217a",
-        "stroke-width": 16,
-        arc: [200, 200, 0, 100, 20]
-    });
-    
-    java_arc = archtype.path().attr({
-        "stroke": "#DE0000",
-        "stroke-width": 16,
-        arc: [200, 200, 0, 100, 20]
-    });
-    
-    c_arc = archtype.path().attr({
-        "stroke": "#99C0FF",
-        "stroke-width": 16,
-        arc: [200, 200, 0, 100, 20]
-    });
-    
-    
-    php_arc.animate({
-        arc: [200, 200, 76, 100, 170]
-    }, 1700, "linear");
-
-    html_arc.animate({
-        arc: [200, 200, 68, 100, 150]
-    }, 1550, "linear");
-    
-    jquery_arc.animate({
-        arc: [200, 200, 68, 100, 130]
-    }, 1550, "linear");
-    
-    css_arc.animate({
-        arc: [200, 200, 62, 100, 110]
-    }, 1300, "linear");
-    
-    sql_arc.animate({
-        arc: [200, 200, 54, 100, 90]
-    }, 1150, "linear");
-    
-    csharp_arc.animate({
-        arc: [200, 200, 42, 100, 70]
-    }, 1000, "linear");
-    
-    java_arc.animate({
-        arc: [200, 200, 35, 100, 50]
-    }, 850, "linear");
-    
-    c_arc.animate({
-        arc: [200, 200, 32, 100, 30]
-    }, 700, "linear");
-    
-    $('.skillBlock').fadeIn(1700);
+    $('.skillText').fadeIn(555);
 }
 
 
