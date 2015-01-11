@@ -160,7 +160,7 @@ function activateSkills() {
     var ctx = $("#skillsChart").get(0).getContext("2d");
 
     var data = {
-    labels: ["PHP", "Javascript", "C#", "MySQL", "HTML5", "CSS3", "Java", "Objective-C", "C", "Android"],
+    labels: ["PHP", "Javascript", "C#", "MySQL", "HTML5", "CSS3", "Objective-C/Swift", "Android/Java"],
     datasets: [
         {
             label: "Interests",
@@ -170,7 +170,7 @@ function activateSkills() {
             pointStrokeColor: "#fff",
             pointHighlightFill: "#fff",
             pointHighlightStroke: "rgba(151,187,205,1)",
-            data: [75, 90, 52, 40, 85, 85, 20, 90, 15, 75]
+            data: [75, 90, 52, 40, 85, 85, 90, 75]
         },
         {
             label: "Expertise",
@@ -180,7 +180,7 @@ function activateSkills() {
             pointStrokeColor: "#fff",
             pointHighlightFill: "#fff",
             pointHighlightStroke: "rgba(220,220,220,1)",
-            data: [95, 80, 24, 75, 70, 70, 20, 25, 20, 45]
+            data: [95, 80, 24, 75, 70, 70, 60, 45]
         }]
     };
 
