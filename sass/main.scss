@@ -13,7 +13,13 @@
 {
     font-family: 'Lucida Sans Unicode';
     src: url(../fonts/lucidasansunicode.ttf);
-}   
+}
+
+body {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-color: #eff0f0;
+}
 
  .whitefont {
     color:#ffffff;
@@ -58,6 +64,10 @@
     background-color: #c4c4c3;
  }
  
+.jumbotron.topBanner {
+    height: 400px;
+}
+
 .jumbotron .bannertext {
     margin-left: 15%;
     padding-top: 10%;
@@ -265,7 +275,7 @@ a:hover {
 }
 
 @media (max-width: 1200px) {
-    
+
     .jumbotron .bannertext h1.title {
         font-size: 80px;
     }
@@ -288,6 +298,16 @@ a:hover {
 }
 
 @media (max-width: 620px) {
+
+    body {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .jumbotron.topBanner {
+        height: 200px;
+    }
+
     .jumbotron .bannertext h1.title {
         font-size: 50px;
     }

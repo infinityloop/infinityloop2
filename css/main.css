@@ -13,19 +13,28 @@
 {
     font-family: 'Lucida Sans Unicode';
     src: url(../fonts/lucidasansunicode.ttf);
-}   
+} 
 
- .whitefont {
+body {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-color: #eff0f0;
+}
+
+.whitefont {
     color:#ffffff;
- }
- .yellowfont {
+}
+
+.yellowfont {
     color: #cc9035;
- }
+}
+
 .greyfont {
     font-family:'infinityFont';
     font-size: 140%;
     color: #9b8579;
 }
+
 .greyfont h2{
     font-family:'infinityFont';
     font-size: 200%;
@@ -51,11 +60,11 @@
 
 .bluebgn {
     background-color: #303c56;
- }
+}
  
- .greybgn {
+.greybgn {
     background-color: #c4c4c3;
- }
+}
  
 .jumbotron .bannertext {
     margin-left: 15%;
@@ -228,7 +237,10 @@ a:hover {
 ** Responsive Classes
 **/
 @media (max-width: 1200px) {
-    
+    .topBanner {
+        height: 400px;
+    }
+
     .jumbotron .bannertext h1.title {
         font-size: 80px;
     }
@@ -238,7 +250,7 @@ a:hover {
     
     .visible-desktop {
         display: none;
-     }
+    }
      
     .quotebgn {
         background-size: cover;
@@ -251,6 +263,10 @@ a:hover {
 }
 
 @media (max-width: 620px) {
+    .jumbotron.topBanner {
+        height: 200px;
+    }
+
     .jumbotron .bannertext h1.title {
         font-size: 50px;
     }
